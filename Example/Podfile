@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'PDListKit_Example' do
+  pod 'PDListKit', :path => '../'
+
+  target 'PDListKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
