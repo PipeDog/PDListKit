@@ -1,0 +1,948 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01CE568CAAD2257DD989B30AD042DDDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		052FE3450790C2BC4796493BB5A5F307 /* Pods-PDListKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E72494534BA2066DB1041F2C94F9E58 /* Pods-PDListKit_Example-dummy.m */; };
+		085DFFFD7A28E2147019ED9E61526918 /* PDListKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DAFBE252CC79BDA915801C3D2A45F22 /* PDListKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11AA3F7CA2C92E5620F0DDAE0964638F /* PDListDiffable.h in Headers */ = {isa = PBXBuildFile; fileRef = C47275ED778020E29CFB139ABBD78BF1 /* PDListDiffable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14404DF8BC6E63D4CAC1F1F967D6A35B /* PDListIndexSetResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 6630800790F5A7CED88187B6759E219C /* PDListIndexSetResult.m */; };
+		14DF61ECA80A1EDDE7F1369821735358 /* PDListBindingSectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = B9CA7D7662BB1EB93E92448FC0FF76EA /* PDListBindingSectionController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19A992882D11B045AB739964FAFBC5BA /* NSArray+PDListDiff.h in Headers */ = {isa = PBXBuildFile; fileRef = F260DEE13B3928D68744A3AA1E86F1F2 /* NSArray+PDListDiff.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2922D8653D04BFB9CF2446F594615B35 /* PDListBindingSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA51E39F6A1C48AF0D0EA43971DA9E6 /* PDListBindingSectionController.m */; };
+		29FDCD91F8896BCF2550C46FC280425B /* PDListAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = BC355E9CC5F217F0A73148E76861693B /* PDListAdapter.m */; };
+		32FC9ECE40ABAF543810167FF5BC9030 /* Pods-PDListKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 392B0B47D5AE8E4A89BD5DF87F5BC7FD /* Pods-PDListKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37F9F3B05A5CCABBE2A22E347E41EA74 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		386FEEB153410839A4F69CFBBCA8C2F8 /* PDListSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = E76FB4AE9F106C1114EFF9B34669047E /* PDListSectionController.m */; };
+		38DB4751AB974D78D8294D5507BF0BAF /* PDListAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 90BA407F7608087A626F120A8483FA6C /* PDListAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48E8FABBFEE17ED5C26F7F80A249022B /* PDListDisplayDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = BF2BDE638E4B7205A23AFECC1A33C630 /* PDListDisplayDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49926470029D9E3A55B62AAFAA26AC75 /* PDListMoveIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6F614B4C9FCC9C79E4C496E60DA159 /* PDListMoveIndex.m */; };
+		4F552DE576D042BB17D7AF4539788E62 /* PDListGenericSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = A11E72F8258C6AE108B4C48FD92D304D /* PDListGenericSectionController.m */; };
+		4FBE1520EB6302F0DEB9D973538B2DC7 /* Pods-PDListKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DE1759E85FBA63DF3CC485E34C1CF8 /* Pods-PDListKit_Tests-dummy.m */; };
+		54A1104D0DF2F62C245DB3766E390D09 /* Pods-PDListKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F7A6FC46A64C239AEBDCFDF89687801A /* Pods-PDListKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		613A67E007C80E1467DEBCC1EF131E61 /* PDListAssert.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FD31B5F61280A9744872713F96630E5 /* PDListAssert.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66ECF741B81895A068765A6BA6BC2486 /* PDListEditingDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B0D9D5711CA1A4AA0A85DA405169068 /* PDListEditingDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A57807B06D6007A6D08D209229672FC /* PDListMoveIndex.h in Headers */ = {isa = PBXBuildFile; fileRef = F309C5FC8FF69C1F632DDDFB90D9E866 /* PDListMoveIndex.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C220B6689CB6997B928F1A210A5B337 /* PDListIndexSetResult+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = B85A126E18D43C721D77193018632C83 /* PDListIndexSetResult+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7111ECD8BB406B5E8878CEACC434EC6A /* PDListKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A4D203DEF6F7E506CB00AF530A64A20 /* PDListKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77CBEE68A4E164E52CD35ECB48A62D2A /* PDListDiff.h in Headers */ = {isa = PBXBuildFile; fileRef = 16D918466547412F0E561D45D026730E /* PDListDiff.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8475DD763B06D8CC12DCE1638D02FD84 /* PDListIndexSetResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 71E70FB89F064758A8B632DF22EE1D41 /* PDListIndexSetResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84F4A68994EB537ED41B2E175D676FC6 /* PDListKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C84003D2BB4218A8C173941C5C0602BA /* PDListKit-dummy.m */; };
+		969F05057CC2F344B8904FE38808F4D3 /* PDListSectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 41D83263FFA0DE51F4C29B9BF397DEB6 /* PDListSectionController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD4670DAA4EDBF7C717A19F1D975389B /* PDListKitUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A59D3AF28BF565F74E8152284D1DF9 /* PDListKitUtil.m */; };
+		B1C75D4718AE8C5924D36A76E0BC9EF4 /* PDListGenericSectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = D865F898FA416CAB2E7E50FA8E48C1CD /* PDListGenericSectionController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C95A816391400F099C99D33BACFD136D /* PDListSingleSectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 936369D670DE9D4E3F43E0FB519C9B78 /* PDListSingleSectionController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9AF345C441CDD039275584EA863F07C /* NSArray+PDListDiff.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA26FB5C71C5A9CC1EF5028F7904EED /* NSArray+PDListDiff.m */; };
+		CCEA24714FE351358FBD580F585BD1E3 /* PDListAdapter+UITableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 721877B09B356F25C207FB184AD10155 /* PDListAdapter+UITableView.m */; };
+		CD0AB2A0B361F543BC3D5FA71DC918DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		DA2B003F0504BFDCF0A5F50ED54E289C /* PDListKitUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = A330C156793C0B78407C4C30380E3C8E /* PDListKitUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA66D26B476EFE049B5698C97B05A516 /* PDListSingleSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF77AB94494935B61B8EA6A45ABEC27A /* PDListSingleSectionController.m */; };
+		E51F3EFF22E089630A0B5F778367783E /* PDListDiff.mm in Sources */ = {isa = PBXBuildFile; fileRef = C16F12B15257E8EB0DA6D763719EC687 /* PDListDiff.mm */; };
+		EDF16BD5047C22352E90867B8E55ABE1 /* PDListBindable.h in Headers */ = {isa = PBXBuildFile; fileRef = EC3EB90C212BCDDA6056C9BB4469D15E /* PDListBindable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F54AD4E45E2EF688DCD51CC0F4C20F3A /* PDListAdapter+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = D68E129C64F2DEE3180291F0F6DC507A /* PDListAdapter+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F59E915D266092D945F821C8A34D779F /* PDListScrollDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D341AC0AAFB14204BD327422D49D453 /* PDListScrollDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F68B3FB5994AF04D7253BD1FC2BEDD46 /* PDListAdapter+UITableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FFAB7B8174CEBC505CA6B6F8DAA762B /* PDListAdapter+UITableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FCF1AFA4B1B64FB09FA847E937E4010D /* PDListSectionController+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = EA83910B62AE3E5A8ABEAAA7730CBA84 /* PDListSectionController+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4497F81643A83FC36092C83BE3592B10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC87314B881406EAACB74118B379A4B3;
+			remoteInfo = "Pods-PDListKit_Example";
+		};
+		5173609468EED47F44362A465F68E8F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8A279239E2C74D8F42E45B5F220ACCB;
+			remoteInfo = PDListKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0148452C8CAB073C7572CA55D58A916A /* Pods-PDListKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PDListKit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		0D3B9BE548ED2B45BD666F689CC46EA1 /* Pods_PDListKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PDListKit_Example.framework; path = "Pods-PDListKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		10DE1759E85FBA63DF3CC485E34C1CF8 /* Pods-PDListKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PDListKit_Tests-dummy.m"; sourceTree = "<group>"; };
+		141D066E1762D54497FC2F0368BBDC54 /* Pods-PDListKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PDListKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		1448CB267C04E15F6A8BE6C678D94E5C /* Pods-PDListKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PDListKit_Tests-Info.plist"; sourceTree = "<group>"; };
+		16D918466547412F0E561D45D026730E /* PDListDiff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListDiff.h; sourceTree = "<group>"; };
+		1A27BA960119294BEB32886ADC947A54 /* Pods-PDListKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PDListKit_Tests.modulemap"; sourceTree = "<group>"; };
+		1A4D203DEF6F7E506CB00AF530A64A20 /* PDListKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListKit.h; sourceTree = "<group>"; };
+		1E6F614B4C9FCC9C79E4C496E60DA159 /* PDListMoveIndex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDListMoveIndex.m; sourceTree = "<group>"; };
+		1E72494534BA2066DB1041F2C94F9E58 /* Pods-PDListKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PDListKit_Example-dummy.m"; sourceTree = "<group>"; };
+		263D53140FC5B6A50A1196A99B0E4377 /* PDListKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PDListKit.release.xcconfig; sourceTree = "<group>"; };
+		30698FC3F71E01EF81F2BB84E536A729 /* Pods-PDListKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PDListKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		33AAF7B0C1AB54F0D34AD72B05080574 /* Pods-PDListKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PDListKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		392B0B47D5AE8E4A89BD5DF87F5BC7FD /* Pods-PDListKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PDListKit_Tests-umbrella.h"; sourceTree = "<group>"; };
+		41D83263FFA0DE51F4C29B9BF397DEB6 /* PDListSectionController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListSectionController.h; sourceTree = "<group>"; };
+		473CF3A0DE770CF553CC70F28B34DC13 /* Pods-PDListKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PDListKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4D341AC0AAFB14204BD327422D49D453 /* PDListScrollDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListScrollDelegate.h; sourceTree = "<group>"; };
+		5FFAB7B8174CEBC505CA6B6F8DAA762B /* PDListAdapter+UITableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PDListAdapter+UITableView.h"; sourceTree = "<group>"; };
+		6630800790F5A7CED88187B6759E219C /* PDListIndexSetResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDListIndexSetResult.m; sourceTree = "<group>"; };
+		6DA26FB5C71C5A9CC1EF5028F7904EED /* NSArray+PDListDiff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PDListDiff.m"; sourceTree = "<group>"; };
+		6DAFBE252CC79BDA915801C3D2A45F22 /* PDListKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PDListKit-umbrella.h"; sourceTree = "<group>"; };
+		6E81C65E21554F3DCDADC756BDE5C95B /* PDListKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PDListKit-Info.plist"; sourceTree = "<group>"; };
+		71E70FB89F064758A8B632DF22EE1D41 /* PDListIndexSetResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListIndexSetResult.h; sourceTree = "<group>"; };
+		721877B09B356F25C207FB184AD10155 /* PDListAdapter+UITableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PDListAdapter+UITableView.m"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7B23BFC753531ED2649A772357B82838 /* PDListKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PDListKit.framework; path = PDListKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FD31B5F61280A9744872713F96630E5 /* PDListAssert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListAssert.h; sourceTree = "<group>"; };
+		90BA407F7608087A626F120A8483FA6C /* PDListAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListAdapter.h; sourceTree = "<group>"; };
+		936369D670DE9D4E3F43E0FB519C9B78 /* PDListSingleSectionController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListSingleSectionController.h; sourceTree = "<group>"; };
+		99305F38F37F465097E8ECA4D9E135A2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		9B0D9D5711CA1A4AA0A85DA405169068 /* PDListEditingDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListEditingDelegate.h; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A11E72F8258C6AE108B4C48FD92D304D /* PDListGenericSectionController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDListGenericSectionController.m; sourceTree = "<group>"; };
+		A330C156793C0B78407C4C30380E3C8E /* PDListKitUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListKitUtil.h; sourceTree = "<group>"; };
+		AB776BF9810451C51785595D7D9872FD /* Pods-PDListKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PDListKit_Example.modulemap"; sourceTree = "<group>"; };
+		B063DD27AF5874098086A8E782569757 /* PDListKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = PDListKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B49AF13A1489F83AA041D0F98E2ECE7B /* PDListKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PDListKit.debug.xcconfig; sourceTree = "<group>"; };
+		B85A126E18D43C721D77193018632C83 /* PDListIndexSetResult+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PDListIndexSetResult+Internal.h"; sourceTree = "<group>"; };
+		B9CA7D7662BB1EB93E92448FC0FF76EA /* PDListBindingSectionController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListBindingSectionController.h; sourceTree = "<group>"; };
+		BC355E9CC5F217F0A73148E76861693B /* PDListAdapter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDListAdapter.m; sourceTree = "<group>"; };
+		BE8DB94CE1EACC2A65E2E4B9D12CCD73 /* Pods-PDListKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PDListKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BF2BDE638E4B7205A23AFECC1A33C630 /* PDListDisplayDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListDisplayDelegate.h; sourceTree = "<group>"; };
+		C16F12B15257E8EB0DA6D763719EC687 /* PDListDiff.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = PDListDiff.mm; sourceTree = "<group>"; };
+		C2CAB4EE9B51523B41E1E142F4A5027C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		C47275ED778020E29CFB139ABBD78BF1 /* PDListDiffable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListDiffable.h; sourceTree = "<group>"; };
+		C63B6DF67B74F805EC8BB98C3C08D255 /* Pods-PDListKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PDListKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		C68C556F2041E314384404F1CB08E40E /* PDListKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PDListKit-prefix.pch"; sourceTree = "<group>"; };
+		C7B10997DC5BB8BD3B5D8BB1B5743C94 /* PDListKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PDListKit.modulemap; sourceTree = "<group>"; };
+		C84003D2BB4218A8C173941C5C0602BA /* PDListKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PDListKit-dummy.m"; sourceTree = "<group>"; };
+		D3A59D3AF28BF565F74E8152284D1DF9 /* PDListKitUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDListKitUtil.m; sourceTree = "<group>"; };
+		D41EA8C50127E5CAE5A9BD7256FCB593 /* Pods-PDListKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PDListKit_Example-frameworks.sh"; sourceTree = "<group>"; };
+		D492591E8C1A43AA8F02234F40F2BC71 /* Pods_PDListKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PDListKit_Tests.framework; path = "Pods-PDListKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D68E129C64F2DEE3180291F0F6DC507A /* PDListAdapter+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PDListAdapter+Internal.h"; sourceTree = "<group>"; };
+		D865F898FA416CAB2E7E50FA8E48C1CD /* PDListGenericSectionController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListGenericSectionController.h; sourceTree = "<group>"; };
+		DCA51E39F6A1C48AF0D0EA43971DA9E6 /* PDListBindingSectionController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDListBindingSectionController.m; sourceTree = "<group>"; };
+		DF77AB94494935B61B8EA6A45ABEC27A /* PDListSingleSectionController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDListSingleSectionController.m; sourceTree = "<group>"; };
+		E76FB4AE9F106C1114EFF9B34669047E /* PDListSectionController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDListSectionController.m; sourceTree = "<group>"; };
+		EA5FA64ACF1D021940527639838D2B29 /* Pods-PDListKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PDListKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		EA83910B62AE3E5A8ABEAAA7730CBA84 /* PDListSectionController+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PDListSectionController+Internal.h"; sourceTree = "<group>"; };
+		EC3EB90C212BCDDA6056C9BB4469D15E /* PDListBindable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListBindable.h; sourceTree = "<group>"; };
+		F260DEE13B3928D68744A3AA1E86F1F2 /* NSArray+PDListDiff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSArray+PDListDiff.h"; sourceTree = "<group>"; };
+		F309C5FC8FF69C1F632DDDFB90D9E866 /* PDListMoveIndex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListMoveIndex.h; sourceTree = "<group>"; };
+		F7A6FC46A64C239AEBDCFDF89687801A /* Pods-PDListKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PDListKit_Example-umbrella.h"; sourceTree = "<group>"; };
+		F9E6B2A9C981CB2E9D09BF4815FA618B /* Pods-PDListKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PDListKit_Example-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		16D9E2C72E438D4DC55E11A1C35083E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD0AB2A0B361F543BC3D5FA71DC918DA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184D4B46D6F0C96C18D35B5BA5A3F6F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01CE568CAAD2257DD989B30AD042DDDA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6806F86AFE76F642C83B2BDD61510E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37F9F3B05A5CCABBE2A22E347E41EA74 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08BF934F950C4FD51ED778E66DF3F31C /* PDListKit */ = {
+			isa = PBXGroup;
+			children = (
+				E8299B11A1117B5C60D708AC4276F596 /* Diff */,
+				EBCE8A6DAD290FCE42AB1DE48C7DC238 /* Extension */,
+				357064BB330BC2737E962EA73B9C0E96 /* ListKit */,
+				41B4ACD0C0E282D1C9F05B04CE996A8C /* Pod */,
+				E85FC235E9AE0AC93E3E9EC70BC2AAA6 /* Support Files */,
+				390B0981200D7946FE7DE2CE1B3ACD1D /* Util */,
+			);
+			name = PDListKit;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		11179A289BA53AE2CA14F9C626543C8E /* SectionController */ = {
+			isa = PBXGroup;
+			children = (
+				BF2BDE638E4B7205A23AFECC1A33C630 /* PDListDisplayDelegate.h */,
+				9B0D9D5711CA1A4AA0A85DA405169068 /* PDListEditingDelegate.h */,
+				4D341AC0AAFB14204BD327422D49D453 /* PDListScrollDelegate.h */,
+				41D83263FFA0DE51F4C29B9BF397DEB6 /* PDListSectionController.h */,
+				E76FB4AE9F106C1114EFF9B34669047E /* PDListSectionController.m */,
+				EA83910B62AE3E5A8ABEAAA7730CBA84 /* PDListSectionController+Internal.h */,
+			);
+			name = SectionController;
+			path = SectionController;
+			sourceTree = "<group>";
+		};
+		3531E7673EF613C1991FD919243F43E2 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A453775BD61D77219153ADCCDC62A25 /* Pods-PDListKit_Example */,
+				F5A11AF1CC26C1455E5EF9B9FAB02D65 /* Pods-PDListKit_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		357064BB330BC2737E962EA73B9C0E96 /* ListKit */ = {
+			isa = PBXGroup;
+			children = (
+				8FD31B5F61280A9744872713F96630E5 /* PDListAssert.h */,
+				1A4D203DEF6F7E506CB00AF530A64A20 /* PDListKit.h */,
+				DCA83D5557E4F4988D35D4B1F0BFBB0C /* ListAdapter */,
+				11179A289BA53AE2CA14F9C626543C8E /* SectionController */,
+			);
+			name = ListKit;
+			path = PDListKit/Classes/ListKit;
+			sourceTree = "<group>";
+		};
+		390B0981200D7946FE7DE2CE1B3ACD1D /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A330C156793C0B78407C4C30380E3C8E /* PDListKitUtil.h */,
+				D3A59D3AF28BF565F74E8152284D1DF9 /* PDListKitUtil.m */,
+			);
+			name = Util;
+			path = PDListKit/Classes/Util;
+			sourceTree = "<group>";
+		};
+		41B4ACD0C0E282D1C9F05B04CE996A8C /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				C2CAB4EE9B51523B41E1E142F4A5027C /* LICENSE */,
+				B063DD27AF5874098086A8E782569757 /* PDListKit.podspec */,
+				99305F38F37F465097E8ECA4D9E135A2 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		4A453775BD61D77219153ADCCDC62A25 /* Pods-PDListKit_Example */ = {
+			isa = PBXGroup;
+			children = (
+				AB776BF9810451C51785595D7D9872FD /* Pods-PDListKit_Example.modulemap */,
+				33AAF7B0C1AB54F0D34AD72B05080574 /* Pods-PDListKit_Example-acknowledgements.markdown */,
+				EA5FA64ACF1D021940527639838D2B29 /* Pods-PDListKit_Example-acknowledgements.plist */,
+				1E72494534BA2066DB1041F2C94F9E58 /* Pods-PDListKit_Example-dummy.m */,
+				D41EA8C50127E5CAE5A9BD7256FCB593 /* Pods-PDListKit_Example-frameworks.sh */,
+				F9E6B2A9C981CB2E9D09BF4815FA618B /* Pods-PDListKit_Example-Info.plist */,
+				F7A6FC46A64C239AEBDCFDF89687801A /* Pods-PDListKit_Example-umbrella.h */,
+				30698FC3F71E01EF81F2BB84E536A729 /* Pods-PDListKit_Example.debug.xcconfig */,
+				0148452C8CAB073C7572CA55D58A916A /* Pods-PDListKit_Example.release.xcconfig */,
+			);
+			name = "Pods-PDListKit_Example";
+			path = "Target Support Files/Pods-PDListKit_Example";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		B1EFA1CED08B7A32DAA5B3D6E5CF6CAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B23BFC753531ED2649A772357B82838 /* PDListKit.framework */,
+				0D3B9BE548ED2B45BD666F689CC46EA1 /* Pods_PDListKit_Example.framework */,
+				D492591E8C1A43AA8F02234F40F2BC71 /* Pods_PDListKit_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				DB1EAD09346DD578CDD5E1BD350486F0 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				B1EFA1CED08B7A32DAA5B3D6E5CF6CAC /* Products */,
+				3531E7673EF613C1991FD919243F43E2 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB1EAD09346DD578CDD5E1BD350486F0 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08BF934F950C4FD51ED778E66DF3F31C /* PDListKit */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		DCA83D5557E4F4988D35D4B1F0BFBB0C /* ListAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				90BA407F7608087A626F120A8483FA6C /* PDListAdapter.h */,
+				BC355E9CC5F217F0A73148E76861693B /* PDListAdapter.m */,
+				D68E129C64F2DEE3180291F0F6DC507A /* PDListAdapter+Internal.h */,
+				5FFAB7B8174CEBC505CA6B6F8DAA762B /* PDListAdapter+UITableView.h */,
+				721877B09B356F25C207FB184AD10155 /* PDListAdapter+UITableView.m */,
+			);
+			name = ListAdapter;
+			path = ListAdapter;
+			sourceTree = "<group>";
+		};
+		E8299B11A1117B5C60D708AC4276F596 /* Diff */ = {
+			isa = PBXGroup;
+			children = (
+				F260DEE13B3928D68744A3AA1E86F1F2 /* NSArray+PDListDiff.h */,
+				6DA26FB5C71C5A9CC1EF5028F7904EED /* NSArray+PDListDiff.m */,
+				EC3EB90C212BCDDA6056C9BB4469D15E /* PDListBindable.h */,
+				16D918466547412F0E561D45D026730E /* PDListDiff.h */,
+				C16F12B15257E8EB0DA6D763719EC687 /* PDListDiff.mm */,
+				C47275ED778020E29CFB139ABBD78BF1 /* PDListDiffable.h */,
+				71E70FB89F064758A8B632DF22EE1D41 /* PDListIndexSetResult.h */,
+				6630800790F5A7CED88187B6759E219C /* PDListIndexSetResult.m */,
+				B85A126E18D43C721D77193018632C83 /* PDListIndexSetResult+Internal.h */,
+				F309C5FC8FF69C1F632DDDFB90D9E866 /* PDListMoveIndex.h */,
+				1E6F614B4C9FCC9C79E4C496E60DA159 /* PDListMoveIndex.m */,
+			);
+			name = Diff;
+			path = PDListKit/Classes/Diff;
+			sourceTree = "<group>";
+		};
+		E85FC235E9AE0AC93E3E9EC70BC2AAA6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C7B10997DC5BB8BD3B5D8BB1B5743C94 /* PDListKit.modulemap */,
+				C84003D2BB4218A8C173941C5C0602BA /* PDListKit-dummy.m */,
+				6E81C65E21554F3DCDADC756BDE5C95B /* PDListKit-Info.plist */,
+				C68C556F2041E314384404F1CB08E40E /* PDListKit-prefix.pch */,
+				6DAFBE252CC79BDA915801C3D2A45F22 /* PDListKit-umbrella.h */,
+				B49AF13A1489F83AA041D0F98E2ECE7B /* PDListKit.debug.xcconfig */,
+				263D53140FC5B6A50A1196A99B0E4377 /* PDListKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/PDListKit";
+			sourceTree = "<group>";
+		};
+		EBCE8A6DAD290FCE42AB1DE48C7DC238 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B9CA7D7662BB1EB93E92448FC0FF76EA /* PDListBindingSectionController.h */,
+				DCA51E39F6A1C48AF0D0EA43971DA9E6 /* PDListBindingSectionController.m */,
+				D865F898FA416CAB2E7E50FA8E48C1CD /* PDListGenericSectionController.h */,
+				A11E72F8258C6AE108B4C48FD92D304D /* PDListGenericSectionController.m */,
+				936369D670DE9D4E3F43E0FB519C9B78 /* PDListSingleSectionController.h */,
+				DF77AB94494935B61B8EA6A45ABEC27A /* PDListSingleSectionController.m */,
+			);
+			name = Extension;
+			path = PDListKit/Classes/Extension;
+			sourceTree = "<group>";
+		};
+		F5A11AF1CC26C1455E5EF9B9FAB02D65 /* Pods-PDListKit_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1A27BA960119294BEB32886ADC947A54 /* Pods-PDListKit_Tests.modulemap */,
+				473CF3A0DE770CF553CC70F28B34DC13 /* Pods-PDListKit_Tests-acknowledgements.markdown */,
+				BE8DB94CE1EACC2A65E2E4B9D12CCD73 /* Pods-PDListKit_Tests-acknowledgements.plist */,
+				10DE1759E85FBA63DF3CC485E34C1CF8 /* Pods-PDListKit_Tests-dummy.m */,
+				1448CB267C04E15F6A8BE6C678D94E5C /* Pods-PDListKit_Tests-Info.plist */,
+				392B0B47D5AE8E4A89BD5DF87F5BC7FD /* Pods-PDListKit_Tests-umbrella.h */,
+				C63B6DF67B74F805EC8BB98C3C08D255 /* Pods-PDListKit_Tests.debug.xcconfig */,
+				141D066E1762D54497FC2F0368BBDC54 /* Pods-PDListKit_Tests.release.xcconfig */,
+			);
+			name = "Pods-PDListKit_Tests";
+			path = "Target Support Files/Pods-PDListKit_Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		091AA40CD89EC604452C7E5D1D2E40E6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54A1104D0DF2F62C245DB3766E390D09 /* Pods-PDListKit_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C34CBAAEFFC16A2123134A87C1F67B56 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32FC9ECE40ABAF543810167FF5BC9030 /* Pods-PDListKit_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8117F8F716E25DB0E447627672F189D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19A992882D11B045AB739964FAFBC5BA /* NSArray+PDListDiff.h in Headers */,
+				F54AD4E45E2EF688DCD51CC0F4C20F3A /* PDListAdapter+Internal.h in Headers */,
+				F68B3FB5994AF04D7253BD1FC2BEDD46 /* PDListAdapter+UITableView.h in Headers */,
+				38DB4751AB974D78D8294D5507BF0BAF /* PDListAdapter.h in Headers */,
+				613A67E007C80E1467DEBCC1EF131E61 /* PDListAssert.h in Headers */,
+				EDF16BD5047C22352E90867B8E55ABE1 /* PDListBindable.h in Headers */,
+				14DF61ECA80A1EDDE7F1369821735358 /* PDListBindingSectionController.h in Headers */,
+				77CBEE68A4E164E52CD35ECB48A62D2A /* PDListDiff.h in Headers */,
+				11AA3F7CA2C92E5620F0DDAE0964638F /* PDListDiffable.h in Headers */,
+				48E8FABBFEE17ED5C26F7F80A249022B /* PDListDisplayDelegate.h in Headers */,
+				66ECF741B81895A068765A6BA6BC2486 /* PDListEditingDelegate.h in Headers */,
+				B1C75D4718AE8C5924D36A76E0BC9EF4 /* PDListGenericSectionController.h in Headers */,
+				6C220B6689CB6997B928F1A210A5B337 /* PDListIndexSetResult+Internal.h in Headers */,
+				8475DD763B06D8CC12DCE1638D02FD84 /* PDListIndexSetResult.h in Headers */,
+				085DFFFD7A28E2147019ED9E61526918 /* PDListKit-umbrella.h in Headers */,
+				7111ECD8BB406B5E8878CEACC434EC6A /* PDListKit.h in Headers */,
+				DA2B003F0504BFDCF0A5F50ED54E289C /* PDListKitUtil.h in Headers */,
+				6A57807B06D6007A6D08D209229672FC /* PDListMoveIndex.h in Headers */,
+				F59E915D266092D945F821C8A34D779F /* PDListScrollDelegate.h in Headers */,
+				FCF1AFA4B1B64FB09FA847E937E4010D /* PDListSectionController+Internal.h in Headers */,
+				969F05057CC2F344B8904FE38808F4D3 /* PDListSectionController.h in Headers */,
+				C95A816391400F099C99D33BACFD136D /* PDListSingleSectionController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8094861C96C6CB74EFC9D38D03F42B68 /* Pods-PDListKit_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 298464313A17DD9DBFF394A54A59691B /* Build configuration list for PBXNativeTarget "Pods-PDListKit_Tests" */;
+			buildPhases = (
+				C34CBAAEFFC16A2123134A87C1F67B56 /* Headers */,
+				69452401714A3048F35594DCB00E8A30 /* Sources */,
+				A6806F86AFE76F642C83B2BDD61510E9 /* Frameworks */,
+				AFC13FF6AFCAE77AD3250AC94E3F5DE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE8AC94BC18D629F596BB48CB6B7A7F5 /* PBXTargetDependency */,
+			);
+			name = "Pods-PDListKit_Tests";
+			productName = "Pods-PDListKit_Tests";
+			productReference = D492591E8C1A43AA8F02234F40F2BC71 /* Pods_PDListKit_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EC87314B881406EAACB74118B379A4B3 /* Pods-PDListKit_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F560C5DCB20F230EE263F4A0910A57ED /* Build configuration list for PBXNativeTarget "Pods-PDListKit_Example" */;
+			buildPhases = (
+				091AA40CD89EC604452C7E5D1D2E40E6 /* Headers */,
+				6EB47EF92130518E9B1F30A852A6FD00 /* Sources */,
+				16D9E2C72E438D4DC55E11A1C35083E2 /* Frameworks */,
+				88C72E4B64BE77B014C55296AEF0B547 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				523B2F524E76A5F494C66D79A08EC6BC /* PBXTargetDependency */,
+			);
+			name = "Pods-PDListKit_Example";
+			productName = "Pods-PDListKit_Example";
+			productReference = 0D3B9BE548ED2B45BD666F689CC46EA1 /* Pods_PDListKit_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F8A279239E2C74D8F42E45B5F220ACCB /* PDListKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F21FE40170DA5F036514BE3248423DD /* Build configuration list for PBXNativeTarget "PDListKit" */;
+			buildPhases = (
+				F8117F8F716E25DB0E447627672F189D /* Headers */,
+				BF1E45BF61381A6475876BA6CA0A033B /* Sources */,
+				184D4B46D6F0C96C18D35B5BA5A3F6F2 /* Frameworks */,
+				147ED7ECC9134CC900D3B2A8A640B18B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PDListKit;
+			productName = PDListKit;
+			productReference = 7B23BFC753531ED2649A772357B82838 /* PDListKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = B1EFA1CED08B7A32DAA5B3D6E5CF6CAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8A279239E2C74D8F42E45B5F220ACCB /* PDListKit */,
+				EC87314B881406EAACB74118B379A4B3 /* Pods-PDListKit_Example */,
+				8094861C96C6CB74EFC9D38D03F42B68 /* Pods-PDListKit_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		147ED7ECC9134CC900D3B2A8A640B18B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88C72E4B64BE77B014C55296AEF0B547 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFC13FF6AFCAE77AD3250AC94E3F5DE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69452401714A3048F35594DCB00E8A30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FBE1520EB6302F0DEB9D973538B2DC7 /* Pods-PDListKit_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EB47EF92130518E9B1F30A852A6FD00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				052FE3450790C2BC4796493BB5A5F307 /* Pods-PDListKit_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF1E45BF61381A6475876BA6CA0A033B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9AF345C441CDD039275584EA863F07C /* NSArray+PDListDiff.m in Sources */,
+				CCEA24714FE351358FBD580F585BD1E3 /* PDListAdapter+UITableView.m in Sources */,
+				29FDCD91F8896BCF2550C46FC280425B /* PDListAdapter.m in Sources */,
+				2922D8653D04BFB9CF2446F594615B35 /* PDListBindingSectionController.m in Sources */,
+				E51F3EFF22E089630A0B5F778367783E /* PDListDiff.mm in Sources */,
+				4F552DE576D042BB17D7AF4539788E62 /* PDListGenericSectionController.m in Sources */,
+				14404DF8BC6E63D4CAC1F1F967D6A35B /* PDListIndexSetResult.m in Sources */,
+				84F4A68994EB537ED41B2E175D676FC6 /* PDListKit-dummy.m in Sources */,
+				AD4670DAA4EDBF7C717A19F1D975389B /* PDListKitUtil.m in Sources */,
+				49926470029D9E3A55B62AAFAA26AC75 /* PDListMoveIndex.m in Sources */,
+				386FEEB153410839A4F69CFBBCA8C2F8 /* PDListSectionController.m in Sources */,
+				DA66D26B476EFE049B5698C97B05A516 /* PDListSingleSectionController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		523B2F524E76A5F494C66D79A08EC6BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PDListKit;
+			target = F8A279239E2C74D8F42E45B5F220ACCB /* PDListKit */;
+			targetProxy = 5173609468EED47F44362A465F68E8F0 /* PBXContainerItemProxy */;
+		};
+		DE8AC94BC18D629F596BB48CB6B7A7F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-PDListKit_Example";
+			target = EC87314B881406EAACB74118B379A4B3 /* Pods-PDListKit_Example */;
+			targetProxy = 4497F81643A83FC36092C83BE3592B10 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0B7FAF567B6B0ADF062C7970CDB1F6E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 141D066E1762D54497FC2F0368BBDC54 /* Pods-PDListKit_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PDListKit_Tests/Pods-PDListKit_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PDListKit_Tests/Pods-PDListKit_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		312D4851271947EF1999A9CA88A6B71A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30698FC3F71E01EF81F2BB84E536A729 /* Pods-PDListKit_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PDListKit_Example/Pods-PDListKit_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PDListKit_Example/Pods-PDListKit_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6ED95C195676207CDCA42D283374EA2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B49AF13A1489F83AA041D0F98E2ECE7B /* PDListKit.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PDListKit/PDListKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PDListKit/PDListKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PDListKit/PDListKit.modulemap";
+				PRODUCT_MODULE_NAME = PDListKit;
+				PRODUCT_NAME = PDListKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9B058D245ADA2A7699D98C5B831A1664 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C63B6DF67B74F805EC8BB98C3C08D255 /* Pods-PDListKit_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PDListKit_Tests/Pods-PDListKit_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PDListKit_Tests/Pods-PDListKit_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B4CD49297013710B4B4A42C02368C35A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 263D53140FC5B6A50A1196A99B0E4377 /* PDListKit.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PDListKit/PDListKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PDListKit/PDListKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PDListKit/PDListKit.modulemap";
+				PRODUCT_MODULE_NAME = PDListKit;
+				PRODUCT_NAME = PDListKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		E14481189ED7D9B4ED26F7B39B51C32C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0148452C8CAB073C7572CA55D58A916A /* Pods-PDListKit_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PDListKit_Example/Pods-PDListKit_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PDListKit_Example/Pods-PDListKit_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		298464313A17DD9DBFF394A54A59691B /* Build configuration list for PBXNativeTarget "Pods-PDListKit_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B058D245ADA2A7699D98C5B831A1664 /* Debug */,
+				0B7FAF567B6B0ADF062C7970CDB1F6E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F21FE40170DA5F036514BE3248423DD /* Build configuration list for PBXNativeTarget "PDListKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6ED95C195676207CDCA42D283374EA2F /* Debug */,
+				B4CD49297013710B4B4A42C02368C35A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
+				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F560C5DCB20F230EE263F4A0910A57ED /* Build configuration list for PBXNativeTarget "Pods-PDListKit_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				312D4851271947EF1999A9CA88A6B71A /* Debug */,
+				E14481189ED7D9B4ED26F7B39B51C32C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

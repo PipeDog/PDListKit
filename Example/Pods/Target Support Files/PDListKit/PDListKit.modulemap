@@ -1,0 +1,6 @@
+framework module PDListKit {
+  umbrella header "PDListKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - PDListKit (0.1.0)
+
+DEPENDENCIES:
+  - PDListKit (from `../`)
+
+EXTERNAL SOURCES:
+  PDListKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  PDListKit: bfe18ea00860e1a84941c19432de8443bd2e9b2d
+
+PODFILE CHECKSUM: 6800a9230ec3e3b276ee576e80e4964ef8baf49a
+
+COCOAPODS: 1.10.1
