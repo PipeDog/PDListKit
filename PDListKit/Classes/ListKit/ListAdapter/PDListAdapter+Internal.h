@@ -7,16 +7,18 @@
 //
 
 #import "PDListAdapter.h"
+#import "PDListUpdater.h"
+#import "PDListSectionMap.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @class PDListSectionController;
 
-@interface PDListAdapter () {
+@interface PDListAdapter () <PDListUpdater> {
     BOOL _isDequeuingCell;
 }
 
-@property (nonatomic, strong) NSMutableDictionary<NSNumber *, PDListSectionController *> *sectionControllers;
+@property (nonatomic, strong) PDListSectionMap *sectionMap;
 
 @end
 

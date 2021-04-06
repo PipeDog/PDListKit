@@ -11,8 +11,11 @@
 #import "PDListAssert.h"
 #import "PDListSectionController.h"
 #import "PDListAdapter+Internal.h"
+#import "NSArray+PDListDiff.h"
+#import "PDListSectionController+Internal.h"
+#import "PDListTableContext.h"
 
-@interface PDListAdapter ()
+@interface PDListAdapter () <PDListTableContext>
 
 @property (nonatomic, strong) UIView *emptyView;
 
@@ -20,9 +23,8 @@
 
 @implementation PDListAdapter
 
-- (instancetype)init {
-    UITableView *tableView;
-    return [self initWithTableView:tableView];
+- (void)dealloc {
+    [_sectionMap reset];
 }
 
 - (instancetype)initWithTableView:(UITableView *)tableView {
@@ -33,91 +35,58 @@
         _tableView = tableView;
         _tableView.delegate = self;
         _tableView.dataSource = self;
+        _sectionMap = [[PDListSectionMap alloc] initWithMapTable:nil];
     }
     return self;
 }
 
 #pragma mark - PDListUpdater Methods
 - (void)reloadData {
+    [self reloadData:PDListUpdateRebindObject];
+}
+
+- (void)reloadData:(PDListUpdateType)reloadType {
     PDAssertMainThread();
-    
-    [self addEmptyViewIfNecessary];
-    [self.sectionControllers removeAllObjects];
+
+    BOOL useCachedSectionController = reloadType == PDListUpdateRebindObject;
+    NSArray<id<PDListDiffable>> *newObjects = [self.dataSource objectsForListAdapter:self];
+    newObjects = PDListObjectsWithDuplicateIdentifiersRemoved(newObjects);
+    [self _updateWithObjects:newObjects useCachedSectionController:useCachedSectionController];
+
     [self.tableView reloadData];
-}
-
-- (void)reloadSections:(NSIndexSet *)sections withRowAnimation:(UITableViewRowAnimation)animation {
-    PDAssertMainThread();
-    
-    [self addEmptyViewIfNecessary];
-    
-    for (NSInteger section = sections.firstIndex; section <= sections.lastIndex; section ++) {
-        [self.sectionControllers removeObjectForKey:@(section)];
-    }
-    [self.tableView reloadSections:sections withRowAnimation:animation];
-}
-
-- (void)reloadRowsAtIndexPaths:(NSArray<NSIndexPath *> *)indexPaths withRowAnimation:(UITableViewRowAnimation)animation {
-    PDAssertMainThread();
-
-    [self addEmptyViewIfNecessary];
-    
-    for (NSIndexPath *indexPath in indexPaths) {
-        [self.sectionControllers removeObjectForKey:@(indexPath.section)];
-    }
-    [self.tableView reloadRowsAtIndexPaths:indexPaths withRowAnimation:animation];
+    [self _addEmptyViewIfNecessary];
 }
 
 - (void)performUpdateSectionControllers:(NSArray<PDListSectionController *> *)sectionControllers withRowAnimation:(UITableViewRowAnimation)animation {
     PDAssertMainThread();
-    if (!sectionControllers.count) return;
+    if (!sectionControllers.count) { return; }
 
+    // Reload objects
+    BOOL useCachedSectionController = YES;
+    NSArray<id<PDListDiffable>> *newObjects = [self.dataSource objectsForListAdapter:self];
+    newObjects = PDListObjectsWithDuplicateIdentifiersRemoved(newObjects);
+    [self _updateWithObjects:newObjects useCachedSectionController:useCachedSectionController];
+
+    // Reload tableView
     NSMutableIndexSet *indexSet = [NSMutableIndexSet indexSet];
-    
     for (PDListSectionController *sectionController in sectionControllers) {
+        if ([self.sectionMap sectionForSectionController:sectionController] == NSNotFound) {
+            NSAssert(NO, @"Can not found sectionController in current tableView!");
+            continue;
+        }
         if ([indexSet containsIndex:sectionController.section]) {
             continue;
         }
         [indexSet addIndex:sectionController.section];
     }
-    [self reloadSections:indexSet withRowAnimation:animation];
-}
-
-- (void)performUpdateSectionController:(PDListSectionController *)sectionController atIndexs:(NSArray<NSNumber *> *)indexs withRowAnimation:(UITableViewRowAnimation)animation {
-    PDAssertMainThread();
-    if (!sectionController) return;
-    if (![self.sectionControllers.allValues containsObject:sectionController]) return;
-
-    NSMutableSet<NSIndexPath *> *indexPaths = [NSMutableSet set];
-    NSInteger section = sectionController.section;
-    
-    for (NSNumber *index in indexs) {
-        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:[index integerValue] inSection:section];
-        [indexPaths addObject:indexPath];
-    }
-    [self reloadRowsAtIndexPaths:[indexPaths allObjects] withRowAnimation:animation];
-}
-
-- (void)addEmptyViewIfNecessary {
-    if (![self.dataSource respondsToSelector:@selector(emptyViewForListAdapter:)]) return;
-    
-    if (_emptyView) {
-        [_emptyView removeFromSuperview];
-        _emptyView = nil;
-    }
-    
-    if ([self.dataSource numberOfSectionControllersForListAdapter:self] <= 0) {
-        self.emptyView = [self.dataSource emptyViewForListAdapter:self];
-        self.emptyView.frame = self.tableView.bounds;
-        [self.tableView addSubview:self.emptyView];
-    }
+    [self.tableView reloadSections:indexSet withRowAnimation:animation];
 }
 
 #pragma mark - PDListTableContext Methods
 - (UITableViewCell *)dequeueReusableCellWithStyle:(UITableViewCellStyle)style forClass:(Class)aClass {
     PDAssert(aClass, @"Arg `aClass` can not be nil!");
     
-    NSString *cellIdentifier = [NSString stringWithFormat:@"%@_%@", aClass, [NSNumber numberWithInteger:style]];
+    NSString *cellIdentifier = [NSString stringWithFormat:@"%@^%@", aClass, [NSNumber numberWithInteger:style]];
     UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if (!cell) {
         cell = [[aClass alloc] initWithStyle:style reuseIdentifier:cellIdentifier];
@@ -138,6 +107,22 @@
     return sectionView;
 }
 
+- (__kindof UITableViewCell *)cellForRowAtIndex:(NSInteger)index sectionController:(PDListSectionController *)sectionController {
+    PDAssertMainThread();
+    PDParameterAssert(sectionController != nil);
+
+    if (_isDequeuingCell) {
+        return nil;
+    }
+
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:index inSection:sectionController.section];
+    if (indexPath != nil && indexPath.section < [self.tableView numberOfSections]) {
+        UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
+        return cell;
+    }
+    return nil;
+}
+
 - (void)performBatchUpdates:(void (^)(void))updates completion:(void (^)(BOOL))completion {
     if (@available(iOS 11, *)) {
         [self.tableView performBatchUpdates:updates completion:completion];
@@ -153,48 +138,50 @@
     }
 }
 
-- (__kindof UITableViewCell *)cellForRowAtIndex:(NSInteger)index sectionController:(PDListSectionController *)sectionController {
-    PDAssertMainThread();
-    PDParameterAssert(sectionController != nil);
-
-    if (_isDequeuingCell) {
-        return nil;
+#pragma mark - Private Methods
+- (void)_addEmptyViewIfNecessary {
+    if (![self.dataSource respondsToSelector:@selector(emptyViewForListAdapter:)]) return;
+    
+    if (_emptyView) {
+        [_emptyView removeFromSuperview];
+        _emptyView = nil;
     }
-
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:index inSection:sectionController.section];
-    // prevent querying the collection view if it isn't fully reloaded yet for the current data set
-    if (indexPath != nil
-        && indexPath.section < [self.tableView numberOfSections]) {
-        // only return a cell if it belongs to the section controller
-        // this association is created in -collectionView:cellForItemAtIndexPath:
-        UICollectionViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
-        return cell;
+    
+    if (!self.sectionMap.objects.count) {
+        self.emptyView = [self.dataSource emptyViewForListAdapter:self];
+        self.emptyView.frame = self.tableView.bounds;
+        [self.tableView addSubview:self.emptyView];
     }
-    return nil;
+}
+
+- (void)_updateWithObjects:(NSArray<id<PDListDiffable>> *)newObjects useCachedSectionController:(BOOL)useCachedSectionController {
+    NSMutableArray<PDListSectionController *> *sectionControllers = [NSMutableArray array];
+    NSInteger count = newObjects.count;
+        
+    for (NSInteger section = 0; section < count; section++) {
+        id<PDListDiffable> object = newObjects[section];
+        PDListSectionController *sectionController = nil;
+        if (useCachedSectionController) {
+            sectionController = [self.sectionMap sectionControllerForObject:object];
+        }
+        if (!sectionController) {
+            sectionController = [self.dataSource listAdapter:self sectionControllerForObject:object];
+        }
+        
+        sectionController.updater = self;
+        sectionController.tableContext = self;
+        sectionController.isFirstSection = (section == 0);
+        sectionController.isLastSection = (section == count - 1);
+        sectionController.section = section;
+        
+        [sectionController didUpdateToObject:object];
+        [sectionControllers addObject:sectionController];
+    }
+    
+    [self.sectionMap updateWithObjects:newObjects sectionControllers:sectionControllers];
 }
 
 #pragma mark - Getter Methods
-- (NSMutableDictionary<NSNumber *, PDListSectionController *> *)sectionControllers {
-    if (!_sectionControllers) {
-        _sectionControllers = [NSMutableDictionary dictionary];
-    }
-    return _sectionControllers;
-}
-
-- (UIViewController *)viewController {
-    if (!_viewController) {
-        UIResponder *responder = _tableView;
-
-        while (responder) {
-            if ([responder isKindOfClass:[UIViewController class]]) {
-                return (UIViewController *)responder;
-            }
-            responder = [responder nextResponder];
-        }
-    }
-    return _viewController;
-}
-
 - (NSArray<PDListSectionController *> *)visibleSectionControllers {
     PDAssertMainThread();
     
@@ -202,8 +189,9 @@
     NSArray<NSIndexPath *> *visibleIndexPaths = [self.tableView.indexPathsForVisibleRows copy];
     
     for (NSIndexPath *indexPath in visibleIndexPaths) {
-        PDListSectionController *sectionController = [self.sectionControllers objectForKey:@(indexPath.section)];
+        PDListSectionController *sectionController = [self.sectionMap sectionControllerForSection:indexPath.section];
         PDAssert(sectionController != nil, @"Section controller nil for cell in section %ld", (long)indexPath.section);
+        
         if (sectionController) {
             [visibleSectionControllers addObject:sectionController];
         }

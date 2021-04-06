@@ -45,7 +45,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong, readonly, nullable) id<PDListDiffable> object;
 @property (nonatomic, strong, readonly) NSArray<id<PDListDiffable>> *viewModels;
 
-- (void)updateAnimated:(BOOL)animated completion:(nullable void (^)(BOOL updated))completion;
+- (void)updateAnimated:(BOOL)animated completion:(void (^ _Nullable)(BOOL updated))completion;
 - (void)moveObjectFromIndex:(NSInteger)sourceIndex toIndex:(NSInteger)destinationIndex NS_REQUIRES_SUPER;
 
 @end

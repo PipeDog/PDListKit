@@ -14,10 +14,7 @@
 @implementation PDListAdapter (UITableViewDataSource)
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    if (!self.dataSource) return 0;
-    if (![self.dataSource respondsToSelector:@selector(numberOfSectionControllersForListAdapter:)]) return 0;
-    
-    return [self.dataSource numberOfSectionControllersForListAdapter:self];
+    return self.sectionMap.objects.count;
 }
 
 #pragma clang diagnostic push
@@ -36,18 +33,8 @@
 }
 #pragma clang diagnostic pop
 
-// Get sectionController from self.sectionControllers with section, if failed, get from dataSource method <objectsForListAdapter:> again.
 - (PDListSectionController *)sectionControllerForSection:(NSInteger)section {
-    PDListSectionController *sectionController = [self.sectionControllers objectForKey:@(section)];
-    if (!sectionController) {
-        sectionController = [self.dataSource listAdapter:self sectionControllerForSection:section];
-        sectionController.section = section;
-        sectionController.updater = self;
-        sectionController.tableContext = self;
-
-        [self.sectionControllers setObject:sectionController forKey:@(section)];
-    }
-    return sectionController;
+    return [self.sectionMap sectionControllerForSection:section];
 }
 
 @end
@@ -97,7 +84,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didEndDisplayingCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (!(indexPath.section < self.sectionControllers.count)) { return; }
+    if (!(indexPath.section < self.sectionMap.objects.count)) { return; }
     
     PDListSectionController *sectionController = [self sectionControllerForSection:indexPath.section];
     id<PDListDisplayDelegate> displayDelegate = sectionController.displayDelegate;
@@ -117,7 +104,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didEndDisplayingHeaderView:(UIView *)view forSection:(NSInteger)section {
-    if (!(section < self.sectionControllers.count)) { return; }
+    if (!(section < self.sectionMap.objects.count)) { return; }
     
     PDListSectionController *sectionController = [self sectionControllerForSection:section];
     id<PDListDisplayDelegate> displayDelegate = sectionController.displayDelegate;
@@ -137,7 +124,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didEndDisplayingFooterView:(UIView *)view forSection:(NSInteger)section {
-    if (!(section < self.sectionControllers.count)) { return; }
+    if (!(section < self.sectionMap.objects.count)) { return; }
     
     PDListSectionController *sectionController = [self sectionControllerForSection:section];
     id<PDListDisplayDelegate> displayDelegate = sectionController.displayDelegate;

@@ -14,7 +14,6 @@
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* PDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* PDAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* PDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* PDViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -24,6 +23,14 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		765E70E374FA050B0CA21D44 /* Pods_PDListKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF6CE5726FD8DE9BA1816D83 /* Pods_PDListKit_Tests.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		DD63F7B0261C7BBE0062FC9A /* PDSecondSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD63F7A7261C7BBE0062FC9A /* PDSecondSectionController.m */; };
+		DD63F7B1261C7BBE0062FC9A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD63F7A9261C7BBE0062FC9A /* ViewController.m */; };
+		DD63F7B2261C7BBE0062FC9A /* PDFirstSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD63F7AC261C7BBE0062FC9A /* PDFirstSectionController.m */; };
+		DD63F7B3261C7BBE0062FC9A /* PDTestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD63F7AD261C7BBE0062FC9A /* PDTestCell.m */; };
+		DD63F7B4261C7BBE0062FC9A /* PDSingleSectionDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD63F7AE261C7BBE0062FC9A /* PDSingleSectionDemoController.m */; };
+		DD63F7C1261C7C010062FC9A /* UITableViewCell+PDCellAutoHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = DD63F7BA261C7C010062FC9A /* UITableViewCell+PDCellAutoHeight.m */; };
+		DD63F7C2261C7C010062FC9A /* UITableView+PDCellAutoHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = DD63F7BC261C7C010062FC9A /* UITableView+PDCellAutoHeight.m */; };
+		DD63F7C3261C7C010062FC9A /* PDCellAutoHeightConst.m in Sources */ = {isa = PBXBuildFile; fileRef = DD63F7BE261C7C010062FC9A /* PDCellAutoHeightConst.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,11 +44,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03B4DA2DD6477A32A88C7619 /* PDListKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = PDListKit.podspec; path = ../PDListKit.podspec; sourceTree = "<group>"; };
+		03B4DA2DD6477A32A88C7619 /* PDListKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PDListKit.podspec; path = ../PDListKit.podspec; sourceTree = "<group>"; };
 		042831DAEFA0841B24860033 /* Pods_PDListKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PDListKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		188606E4299CBF13B903A35A /* Pods-PDListKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDListKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-PDListKit_Example/Pods-PDListKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		384F05A58DA82024212F05BF /* Pods-PDListKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDListKit_Example.release.xcconfig"; path = "Target Support Files/Pods-PDListKit_Example/Pods-PDListKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		4418C49C74C06E2BA616CF4F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		4418C49C74C06E2BA616CF4F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* PDListKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDListKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -52,8 +59,6 @@
 		6003F59B195388D20070C39A /* PDListKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PDListKit-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* PDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* PDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* PDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* PDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* PDListKit_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PDListKit_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -65,7 +70,24 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		87EDC5A4BFFB8FE391E14CC3 /* Pods-PDListKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDListKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-PDListKit_Tests/Pods-PDListKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		BBFF63AD09239A9C75C99B1F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		BBFF63AD09239A9C75C99B1F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		DD63F7A6261C7BBE0062FC9A /* PDFirstSectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFirstSectionController.h; sourceTree = "<group>"; };
+		DD63F7A7261C7BBE0062FC9A /* PDSecondSectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDSecondSectionController.m; sourceTree = "<group>"; };
+		DD63F7A8261C7BBE0062FC9A /* PDTestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDTestCell.h; sourceTree = "<group>"; };
+		DD63F7A9261C7BBE0062FC9A /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DD63F7AA261C7BBE0062FC9A /* PDSingleSectionDemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDSingleSectionDemoController.h; sourceTree = "<group>"; };
+		DD63F7AB261C7BBE0062FC9A /* PDSecondSectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDSecondSectionController.h; sourceTree = "<group>"; };
+		DD63F7AC261C7BBE0062FC9A /* PDFirstSectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFirstSectionController.m; sourceTree = "<group>"; };
+		DD63F7AD261C7BBE0062FC9A /* PDTestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDTestCell.m; sourceTree = "<group>"; };
+		DD63F7AE261C7BBE0062FC9A /* PDSingleSectionDemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDSingleSectionDemoController.m; sourceTree = "<group>"; };
+		DD63F7AF261C7BBE0062FC9A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DD63F7BA261C7C010062FC9A /* UITableViewCell+PDCellAutoHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+PDCellAutoHeight.m"; sourceTree = "<group>"; };
+		DD63F7BB261C7C010062FC9A /* PDCellAutoHeightConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDCellAutoHeightConst.h; sourceTree = "<group>"; };
+		DD63F7BC261C7C010062FC9A /* UITableView+PDCellAutoHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+PDCellAutoHeight.m"; sourceTree = "<group>"; };
+		DD63F7BD261C7C010062FC9A /* UITableViewCell+PDCellAutoHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+PDCellAutoHeight.h"; sourceTree = "<group>"; };
+		DD63F7BE261C7C010062FC9A /* PDCellAutoHeightConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDCellAutoHeightConst.m; sourceTree = "<group>"; };
+		DD63F7BF261C7C010062FC9A /* PDCellAutoHeightProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDCellAutoHeightProtocol.h; sourceTree = "<group>"; };
+		DD63F7C0261C7C010062FC9A /* UITableView+PDCellAutoHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+PDCellAutoHeight.h"; sourceTree = "<group>"; };
 		FF6CE5726FD8DE9BA1816D83 /* Pods_PDListKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PDListKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -103,7 +125,6 @@
 				87EDC5A4BFFB8FE391E14CC3 /* Pods-PDListKit_Tests.debug.xcconfig */,
 				648455CECB379A5BDDA3E968 /* Pods-PDListKit_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -144,11 +165,10 @@
 		6003F593195388D20070C39A /* Example for PDListKit */ = {
 			isa = PBXGroup;
 			children = (
+				DD63F7A5261C7BBE0062FC9A /* Demo */,
 				6003F59C195388D20070C39A /* PDAppDelegate.h */,
 				6003F59D195388D20070C39A /* PDAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* PDViewController.h */,
-				6003F5A6195388D20070C39A /* PDViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -195,6 +215,38 @@
 				BBFF63AD09239A9C75C99B1F /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		DD63F7A5261C7BBE0062FC9A /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				DD63F7B9261C7C010062FC9A /* PDCellAutoHeight */,
+				DD63F7A6261C7BBE0062FC9A /* PDFirstSectionController.h */,
+				DD63F7AC261C7BBE0062FC9A /* PDFirstSectionController.m */,
+				DD63F7A7261C7BBE0062FC9A /* PDSecondSectionController.m */,
+				DD63F7AB261C7BBE0062FC9A /* PDSecondSectionController.h */,
+				DD63F7AA261C7BBE0062FC9A /* PDSingleSectionDemoController.h */,
+				DD63F7AE261C7BBE0062FC9A /* PDSingleSectionDemoController.m */,
+				DD63F7A8261C7BBE0062FC9A /* PDTestCell.h */,
+				DD63F7AD261C7BBE0062FC9A /* PDTestCell.m */,
+				DD63F7AF261C7BBE0062FC9A /* ViewController.h */,
+				DD63F7A9261C7BBE0062FC9A /* ViewController.m */,
+			);
+			path = Demo;
+			sourceTree = SOURCE_ROOT;
+		};
+		DD63F7B9261C7C010062FC9A /* PDCellAutoHeight */ = {
+			isa = PBXGroup;
+			children = (
+				DD63F7BF261C7C010062FC9A /* PDCellAutoHeightProtocol.h */,
+				DD63F7BB261C7C010062FC9A /* PDCellAutoHeightConst.h */,
+				DD63F7BE261C7C010062FC9A /* PDCellAutoHeightConst.m */,
+				DD63F7BD261C7C010062FC9A /* UITableViewCell+PDCellAutoHeight.h */,
+				DD63F7BA261C7C010062FC9A /* UITableViewCell+PDCellAutoHeight.m */,
+				DD63F7C0261C7C010062FC9A /* UITableView+PDCellAutoHeight.h */,
+				DD63F7BC261C7C010062FC9A /* UITableView+PDCellAutoHeight.m */,
+			);
+			path = PDCellAutoHeight;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +310,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -365,8 +418,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* PDAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* PDViewController.m in Sources */,
+				DD63F7C3261C7C010062FC9A /* PDCellAutoHeightConst.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				DD63F7B0261C7BBE0062FC9A /* PDSecondSectionController.m in Sources */,
+				DD63F7C1261C7C010062FC9A /* UITableViewCell+PDCellAutoHeight.m in Sources */,
+				DD63F7B3261C7BBE0062FC9A /* PDTestCell.m in Sources */,
+				DD63F7C2261C7C010062FC9A /* UITableView+PDCellAutoHeight.m in Sources */,
+				DD63F7B2261C7BBE0062FC9A /* PDFirstSectionController.m in Sources */,
+				DD63F7B4261C7BBE0062FC9A /* PDSingleSectionDemoController.m in Sources */,
+				DD63F7B1261C7BBE0062FC9A /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

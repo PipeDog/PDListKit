@@ -20,9 +20,13 @@
 #import "PDListBindingSectionController.h"
 #import "PDListGenericSectionController.h"
 #import "PDListSingleSectionController.h"
+#import "PDListKitUtil.h"
+#import "PDListSectionMap.h"
 #import "PDListAdapter+Internal.h"
 #import "PDListAdapter+UITableView.h"
 #import "PDListAdapter.h"
+#import "PDListTableContext.h"
+#import "PDListUpdater.h"
 #import "PDListAssert.h"
 #import "PDListKit.h"
 #import "PDListDisplayDelegate.h"
@@ -30,7 +34,6 @@
 #import "PDListScrollDelegate.h"
 #import "PDListSectionController+Internal.h"
 #import "PDListSectionController.h"
-#import "PDListKitUtil.h"
 
 FOUNDATION_EXPORT double PDListKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char PDListKitVersionString[];

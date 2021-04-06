@@ -7,58 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01CE568CAAD2257DD989B30AD042DDDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		052FE3450790C2BC4796493BB5A5F307 /* Pods-PDListKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E72494534BA2066DB1041F2C94F9E58 /* Pods-PDListKit_Example-dummy.m */; };
-		085DFFFD7A28E2147019ED9E61526918 /* PDListKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DAFBE252CC79BDA915801C3D2A45F22 /* PDListKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		11AA3F7CA2C92E5620F0DDAE0964638F /* PDListDiffable.h in Headers */ = {isa = PBXBuildFile; fileRef = C47275ED778020E29CFB139ABBD78BF1 /* PDListDiffable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		14404DF8BC6E63D4CAC1F1F967D6A35B /* PDListIndexSetResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 6630800790F5A7CED88187B6759E219C /* PDListIndexSetResult.m */; };
-		14DF61ECA80A1EDDE7F1369821735358 /* PDListBindingSectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = B9CA7D7662BB1EB93E92448FC0FF76EA /* PDListBindingSectionController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		19A992882D11B045AB739964FAFBC5BA /* NSArray+PDListDiff.h in Headers */ = {isa = PBXBuildFile; fileRef = F260DEE13B3928D68744A3AA1E86F1F2 /* NSArray+PDListDiff.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2922D8653D04BFB9CF2446F594615B35 /* PDListBindingSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA51E39F6A1C48AF0D0EA43971DA9E6 /* PDListBindingSectionController.m */; };
-		29FDCD91F8896BCF2550C46FC280425B /* PDListAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = BC355E9CC5F217F0A73148E76861693B /* PDListAdapter.m */; };
+		0941D86F44462C61BD6BD32880FE8904 /* PDListKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 761CD53FAB6C62FA9C77438D5EF56ECC /* PDListKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09B5EF9A70D57E098F585258C67E3711 /* PDListMoveIndex.h in Headers */ = {isa = PBXBuildFile; fileRef = 18C1A555D46A8F6F83A38790525B8EF1 /* PDListMoveIndex.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		310D5130B386129D75699560CC634DCC /* PDListKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 211EEEA80EB13ABEE3074C1F10E80642 /* PDListKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		32FC9ECE40ABAF543810167FF5BC9030 /* Pods-PDListKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 392B0B47D5AE8E4A89BD5DF87F5BC7FD /* Pods-PDListKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3622C71A1A8EAAC6FE49E774DA46B081 /* PDListAdapter+UITableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 489389B8152E1C42236E4A7010314A1E /* PDListAdapter+UITableView.m */; };
+		37B78E2CC7B5255096203C10919ED165 /* PDListSectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = E2F54C6C1D3F04A4951283287A345103 /* PDListSectionController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		37F9F3B05A5CCABBE2A22E347E41EA74 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		386FEEB153410839A4F69CFBBCA8C2F8 /* PDListSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = E76FB4AE9F106C1114EFF9B34669047E /* PDListSectionController.m */; };
-		38DB4751AB974D78D8294D5507BF0BAF /* PDListAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 90BA407F7608087A626F120A8483FA6C /* PDListAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		48E8FABBFEE17ED5C26F7F80A249022B /* PDListDisplayDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = BF2BDE638E4B7205A23AFECC1A33C630 /* PDListDisplayDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		49926470029D9E3A55B62AAFAA26AC75 /* PDListMoveIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6F614B4C9FCC9C79E4C496E60DA159 /* PDListMoveIndex.m */; };
-		4F552DE576D042BB17D7AF4539788E62 /* PDListGenericSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = A11E72F8258C6AE108B4C48FD92D304D /* PDListGenericSectionController.m */; };
+		3BBFA1542E9B1A1826EAAE6543260908 /* PDListDiff.mm in Sources */ = {isa = PBXBuildFile; fileRef = 43AF27B1F6925034DB9C652ABDC75A97 /* PDListDiff.mm */; };
+		3F82DD9FBCFA6976A529A53AE99F6480 /* NSArray+PDListDiff.h in Headers */ = {isa = PBXBuildFile; fileRef = 48B066704FC206EAC468F35CC17A742E /* NSArray+PDListDiff.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3FE7F2BBEB97A3069497EE479371B87C /* PDListSectionMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 9412D490DD3C4535525D1AE9A5B77A64 /* PDListSectionMap.m */; };
+		457DDB56068E3C589F184F0626B3193B /* PDListSectionMap.h in Headers */ = {isa = PBXBuildFile; fileRef = E075B1D67081840A7556E05E624ABF23 /* PDListSectionMap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45A51DD97C4D5B5B259D82FD259BB13E /* PDListKitUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = F11A5F55360C54048F5D00AC4849B6E0 /* PDListKitUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F8F3730F0BDE3AF92280BF48B1AA9AB /* PDListAdapter+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 35338C639AD4CE114B65CCBABB3909BC /* PDListAdapter+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4FBE1520EB6302F0DEB9D973538B2DC7 /* Pods-PDListKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DE1759E85FBA63DF3CC485E34C1CF8 /* Pods-PDListKit_Tests-dummy.m */; };
 		54A1104D0DF2F62C245DB3766E390D09 /* Pods-PDListKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F7A6FC46A64C239AEBDCFDF89687801A /* Pods-PDListKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		613A67E007C80E1467DEBCC1EF131E61 /* PDListAssert.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FD31B5F61280A9744872713F96630E5 /* PDListAssert.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		66ECF741B81895A068765A6BA6BC2486 /* PDListEditingDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B0D9D5711CA1A4AA0A85DA405169068 /* PDListEditingDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6A57807B06D6007A6D08D209229672FC /* PDListMoveIndex.h in Headers */ = {isa = PBXBuildFile; fileRef = F309C5FC8FF69C1F632DDDFB90D9E866 /* PDListMoveIndex.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6C220B6689CB6997B928F1A210A5B337 /* PDListIndexSetResult+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = B85A126E18D43C721D77193018632C83 /* PDListIndexSetResult+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7111ECD8BB406B5E8878CEACC434EC6A /* PDListKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A4D203DEF6F7E506CB00AF530A64A20 /* PDListKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		77CBEE68A4E164E52CD35ECB48A62D2A /* PDListDiff.h in Headers */ = {isa = PBXBuildFile; fileRef = 16D918466547412F0E561D45D026730E /* PDListDiff.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8475DD763B06D8CC12DCE1638D02FD84 /* PDListIndexSetResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 71E70FB89F064758A8B632DF22EE1D41 /* PDListIndexSetResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		84F4A68994EB537ED41B2E175D676FC6 /* PDListKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C84003D2BB4218A8C173941C5C0602BA /* PDListKit-dummy.m */; };
-		969F05057CC2F344B8904FE38808F4D3 /* PDListSectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 41D83263FFA0DE51F4C29B9BF397DEB6 /* PDListSectionController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AD4670DAA4EDBF7C717A19F1D975389B /* PDListKitUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A59D3AF28BF565F74E8152284D1DF9 /* PDListKitUtil.m */; };
-		B1C75D4718AE8C5924D36A76E0BC9EF4 /* PDListGenericSectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = D865F898FA416CAB2E7E50FA8E48C1CD /* PDListGenericSectionController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C95A816391400F099C99D33BACFD136D /* PDListSingleSectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 936369D670DE9D4E3F43E0FB519C9B78 /* PDListSingleSectionController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C9AF345C441CDD039275584EA863F07C /* NSArray+PDListDiff.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA26FB5C71C5A9CC1EF5028F7904EED /* NSArray+PDListDiff.m */; };
-		CCEA24714FE351358FBD580F585BD1E3 /* PDListAdapter+UITableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 721877B09B356F25C207FB184AD10155 /* PDListAdapter+UITableView.m */; };
+		5E860A2D873E089C0B19D7FF71734E10 /* PDListDiffable.h in Headers */ = {isa = PBXBuildFile; fileRef = 61B3D75AE8A0A68194EDD758AFA31278 /* PDListDiffable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F46BBB5090CD2761BC254875D26BFD1 /* PDListGenericSectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = C0532AA0F27C4325D0DB4DD45B4A36AD /* PDListGenericSectionController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6308F4A9FEA18D48C1B1484024E30AF2 /* PDListTableContext.h in Headers */ = {isa = PBXBuildFile; fileRef = B3A9E461E6C53F0E7A9BF16D7A34E76B /* PDListTableContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		674F22AC3B6AE0243D02BFEB28C44677 /* PDListIndexSetResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 416CA674A3B946DB18466B38694E29C9 /* PDListIndexSetResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A15BEFB2D5E527A7FD4EE7FF9D3998E /* PDListDisplayDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CA2F36CF4FCBE079EE3EB77D84A0AFB /* PDListDisplayDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79334093BD27D3402BABFCC85B638DF3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		83BA627972622F7B8EF223AB13EDED6F /* PDListAssert.h in Headers */ = {isa = PBXBuildFile; fileRef = 248CF4E5524564C4AD19FB84D8E1DEC4 /* PDListAssert.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A56A303CC124389CAD955A6A21EE966 /* PDListBindingSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B35BDEC234ED602BA3B44F33CB4F1D4 /* PDListBindingSectionController.m */; };
+		9255D70D82DA4EB5553C375BD8672B9F /* PDListBindable.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A89338264F2C66D261F44139D100BC1 /* PDListBindable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A393DC2B74B8977C06B0BED465D5AC31 /* PDListScrollDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E04D5EC58327A2C07CAF970DC611211 /* PDListScrollDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8CE4DB3CE27419FC7F0B25516F4B9D2 /* PDListMoveIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AAA6AA81E7D70E3965953B285BF539B /* PDListMoveIndex.m */; };
+		AF7F1D0FE4FF8991FE18A227DA91A3C5 /* PDListBindingSectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = BD19B7CB91C1BDC6443639D3973AE529 /* PDListBindingSectionController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BDE2CD79C4AF5D2C8BD55F8B3F7BE0AE /* PDListIndexSetResult.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B24BF20176B324399057B8D006686B /* PDListIndexSetResult.m */; };
+		C0D07CFA5576238E636EF425C3AD33B8 /* PDListSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8778BECE94D7C5D22372A22EE2499146 /* PDListSectionController.m */; };
+		C3FAD4554E3DE865ADAD07A17435C88E /* PDListSectionController+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AA1A51F08AFC6C31A9EA2027C79B614 /* PDListSectionController+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C826B57ABD46A60FE62603AABEE17D11 /* PDListUpdater.h in Headers */ = {isa = PBXBuildFile; fileRef = 26779F990485F745D22C80AD9B923C71 /* PDListUpdater.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CABAA976249A4BE01D642EF843CD0332 /* PDListAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 23EC2D2F1FF2DD1184894648E57F2F14 /* PDListAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD0AB2A0B361F543BC3D5FA71DC918DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		DA2B003F0504BFDCF0A5F50ED54E289C /* PDListKitUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = A330C156793C0B78407C4C30380E3C8E /* PDListKitUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DA66D26B476EFE049B5698C97B05A516 /* PDListSingleSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF77AB94494935B61B8EA6A45ABEC27A /* PDListSingleSectionController.m */; };
-		E51F3EFF22E089630A0B5F778367783E /* PDListDiff.mm in Sources */ = {isa = PBXBuildFile; fileRef = C16F12B15257E8EB0DA6D763719EC687 /* PDListDiff.mm */; };
-		EDF16BD5047C22352E90867B8E55ABE1 /* PDListBindable.h in Headers */ = {isa = PBXBuildFile; fileRef = EC3EB90C212BCDDA6056C9BB4469D15E /* PDListBindable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F54AD4E45E2EF688DCD51CC0F4C20F3A /* PDListAdapter+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = D68E129C64F2DEE3180291F0F6DC507A /* PDListAdapter+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F59E915D266092D945F821C8A34D779F /* PDListScrollDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D341AC0AAFB14204BD327422D49D453 /* PDListScrollDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F68B3FB5994AF04D7253BD1FC2BEDD46 /* PDListAdapter+UITableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FFAB7B8174CEBC505CA6B6F8DAA762B /* PDListAdapter+UITableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FCF1AFA4B1B64FB09FA847E937E4010D /* PDListSectionController+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = EA83910B62AE3E5A8ABEAAA7730CBA84 /* PDListSectionController+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4582D3CF1B407F285DB94018D30FC3B /* PDListAdapter+UITableView.h in Headers */ = {isa = PBXBuildFile; fileRef = F5AE820E60BC52315A21DD8A8AADF5BD /* PDListAdapter+UITableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D80A4C86DE1AB0A1FE15CE27F9FC0B1E /* PDListIndexSetResult+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 289BC05947B3D0D2F550D92A6709EE5F /* PDListIndexSetResult+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA52D632403FF64921BBCFAC17835C18 /* PDListSingleSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 105AD651AE4565CEF82F1733EEB0C5D9 /* PDListSingleSectionController.m */; };
+		DBDD2EE2AC4574A44AEF3F813077EC42 /* NSArray+PDListDiff.m in Sources */ = {isa = PBXBuildFile; fileRef = E235CE4EAF46BAB66425CE4B238178F1 /* NSArray+PDListDiff.m */; };
+		E1ADA55240B58D8DD60B843424DAB0B4 /* PDListAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = A776E6522D3997D221E81EC13911A0A7 /* PDListAdapter.m */; };
+		E71B2B8E9F1F006045DDE0DE30CB5A26 /* PDListEditingDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = EA7B7DAA66EA76F347DF8DEB9348AC5F /* PDListEditingDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1296C4E2E161E27EB35085A7188CD34 /* PDListSingleSectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 16619B5FAE16B61EE574222543CFA8BB /* PDListSingleSectionController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F14D1CA723A733A04CB700DE98E834FC /* PDListGenericSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3696B3EF57A0508C784CB9B77B635AAA /* PDListGenericSectionController.m */; };
+		FA480DCD1ABC3A112B0B8C764E101EAC /* PDListKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD9A743467BA6F7624B7E242AE81D5F /* PDListKit-dummy.m */; };
+		FC64174EB3863ECE8B3BE1F053A8C6E0 /* PDListKitUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 997A5CB367DB66E6391367F53063C467 /* PDListKitUtil.m */; };
+		FEA9AA57BE94CFF77E0BA7E5C2422C8D /* PDListDiff.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B42F11E5A217D5722B32ADCCE398055 /* PDListDiff.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4497F81643A83FC36092C83BE3592B10 /* PBXContainerItemProxy */ = {
+		729DC9CFD7EE8C0115F6EBF1EA95A1F4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = EC87314B881406EAACB74118B379A4B3;
 			remoteInfo = "Pods-PDListKit_Example";
 		};
-		5173609468EED47F44362A465F68E8F0 /* PBXContainerItemProxy */ = {
+		78AB6C1841285379914BD39ACC738914 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -69,69 +73,73 @@
 
 /* Begin PBXFileReference section */
 		0148452C8CAB073C7572CA55D58A916A /* Pods-PDListKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PDListKit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		0CA2F36CF4FCBE079EE3EB77D84A0AFB /* PDListDisplayDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListDisplayDelegate.h; sourceTree = "<group>"; };
 		0D3B9BE548ED2B45BD666F689CC46EA1 /* Pods_PDListKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PDListKit_Example.framework; path = "Pods-PDListKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FD9A743467BA6F7624B7E242AE81D5F /* PDListKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PDListKit-dummy.m"; sourceTree = "<group>"; };
+		105AD651AE4565CEF82F1733EEB0C5D9 /* PDListSingleSectionController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDListSingleSectionController.m; sourceTree = "<group>"; };
 		10DE1759E85FBA63DF3CC485E34C1CF8 /* Pods-PDListKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PDListKit_Tests-dummy.m"; sourceTree = "<group>"; };
 		141D066E1762D54497FC2F0368BBDC54 /* Pods-PDListKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PDListKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		1448CB267C04E15F6A8BE6C678D94E5C /* Pods-PDListKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PDListKit_Tests-Info.plist"; sourceTree = "<group>"; };
-		16D918466547412F0E561D45D026730E /* PDListDiff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListDiff.h; sourceTree = "<group>"; };
+		16619B5FAE16B61EE574222543CFA8BB /* PDListSingleSectionController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListSingleSectionController.h; sourceTree = "<group>"; };
+		18C1A555D46A8F6F83A38790525B8EF1 /* PDListMoveIndex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListMoveIndex.h; sourceTree = "<group>"; };
 		1A27BA960119294BEB32886ADC947A54 /* Pods-PDListKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PDListKit_Tests.modulemap"; sourceTree = "<group>"; };
-		1A4D203DEF6F7E506CB00AF530A64A20 /* PDListKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListKit.h; sourceTree = "<group>"; };
-		1E6F614B4C9FCC9C79E4C496E60DA159 /* PDListMoveIndex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDListMoveIndex.m; sourceTree = "<group>"; };
 		1E72494534BA2066DB1041F2C94F9E58 /* Pods-PDListKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PDListKit_Example-dummy.m"; sourceTree = "<group>"; };
-		263D53140FC5B6A50A1196A99B0E4377 /* PDListKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PDListKit.release.xcconfig; sourceTree = "<group>"; };
+		211EEEA80EB13ABEE3074C1F10E80642 /* PDListKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PDListKit-umbrella.h"; sourceTree = "<group>"; };
+		23EC2D2F1FF2DD1184894648E57F2F14 /* PDListAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListAdapter.h; sourceTree = "<group>"; };
+		248CF4E5524564C4AD19FB84D8E1DEC4 /* PDListAssert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListAssert.h; sourceTree = "<group>"; };
+		26779F990485F745D22C80AD9B923C71 /* PDListUpdater.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListUpdater.h; sourceTree = "<group>"; };
+		289BC05947B3D0D2F550D92A6709EE5F /* PDListIndexSetResult+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PDListIndexSetResult+Internal.h"; sourceTree = "<group>"; };
+		2A89338264F2C66D261F44139D100BC1 /* PDListBindable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListBindable.h; sourceTree = "<group>"; };
+		2CEF6DB55293B83CF2790145D011DCC7 /* PDListKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PDListKit.modulemap; sourceTree = "<group>"; };
 		30698FC3F71E01EF81F2BB84E536A729 /* Pods-PDListKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PDListKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		33AAF7B0C1AB54F0D34AD72B05080574 /* Pods-PDListKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PDListKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		35338C639AD4CE114B65CCBABB3909BC /* PDListAdapter+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PDListAdapter+Internal.h"; sourceTree = "<group>"; };
+		3696B3EF57A0508C784CB9B77B635AAA /* PDListGenericSectionController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDListGenericSectionController.m; sourceTree = "<group>"; };
 		392B0B47D5AE8E4A89BD5DF87F5BC7FD /* Pods-PDListKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PDListKit_Tests-umbrella.h"; sourceTree = "<group>"; };
-		41D83263FFA0DE51F4C29B9BF397DEB6 /* PDListSectionController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListSectionController.h; sourceTree = "<group>"; };
+		3AAA6AA81E7D70E3965953B285BF539B /* PDListMoveIndex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDListMoveIndex.m; sourceTree = "<group>"; };
+		416CA674A3B946DB18466B38694E29C9 /* PDListIndexSetResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListIndexSetResult.h; sourceTree = "<group>"; };
+		41ABBE521DDF84ABF15384731D91726F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		43AF27B1F6925034DB9C652ABDC75A97 /* PDListDiff.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = PDListDiff.mm; sourceTree = "<group>"; };
 		473CF3A0DE770CF553CC70F28B34DC13 /* Pods-PDListKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PDListKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4D341AC0AAFB14204BD327422D49D453 /* PDListScrollDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListScrollDelegate.h; sourceTree = "<group>"; };
-		5FFAB7B8174CEBC505CA6B6F8DAA762B /* PDListAdapter+UITableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PDListAdapter+UITableView.h"; sourceTree = "<group>"; };
-		6630800790F5A7CED88187B6759E219C /* PDListIndexSetResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDListIndexSetResult.m; sourceTree = "<group>"; };
-		6DA26FB5C71C5A9CC1EF5028F7904EED /* NSArray+PDListDiff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PDListDiff.m"; sourceTree = "<group>"; };
-		6DAFBE252CC79BDA915801C3D2A45F22 /* PDListKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PDListKit-umbrella.h"; sourceTree = "<group>"; };
-		6E81C65E21554F3DCDADC756BDE5C95B /* PDListKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PDListKit-Info.plist"; sourceTree = "<group>"; };
-		71E70FB89F064758A8B632DF22EE1D41 /* PDListIndexSetResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListIndexSetResult.h; sourceTree = "<group>"; };
-		721877B09B356F25C207FB184AD10155 /* PDListAdapter+UITableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PDListAdapter+UITableView.m"; sourceTree = "<group>"; };
+		489389B8152E1C42236E4A7010314A1E /* PDListAdapter+UITableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PDListAdapter+UITableView.m"; sourceTree = "<group>"; };
+		48B066704FC206EAC468F35CC17A742E /* NSArray+PDListDiff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSArray+PDListDiff.h"; sourceTree = "<group>"; };
+		4B42F11E5A217D5722B32ADCCE398055 /* PDListDiff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListDiff.h; sourceTree = "<group>"; };
+		5B03482015C62B8EA849EBC23A380960 /* PDListKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PDListKit.release.xcconfig; sourceTree = "<group>"; };
+		61B3D75AE8A0A68194EDD758AFA31278 /* PDListDiffable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListDiffable.h; sourceTree = "<group>"; };
+		67FA125CEFF8D25137629807C3B32D41 /* PDListKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PDListKit-prefix.pch"; sourceTree = "<group>"; };
+		722C961AD1E5CA9B94E36A272353E273 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		761CD53FAB6C62FA9C77438D5EF56ECC /* PDListKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListKit.h; sourceTree = "<group>"; };
 		7B23BFC753531ED2649A772357B82838 /* PDListKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PDListKit.framework; path = PDListKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8FD31B5F61280A9744872713F96630E5 /* PDListAssert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListAssert.h; sourceTree = "<group>"; };
-		90BA407F7608087A626F120A8483FA6C /* PDListAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListAdapter.h; sourceTree = "<group>"; };
-		936369D670DE9D4E3F43E0FB519C9B78 /* PDListSingleSectionController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListSingleSectionController.h; sourceTree = "<group>"; };
-		99305F38F37F465097E8ECA4D9E135A2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		9B0D9D5711CA1A4AA0A85DA405169068 /* PDListEditingDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListEditingDelegate.h; sourceTree = "<group>"; };
+		7B35BDEC234ED602BA3B44F33CB4F1D4 /* PDListBindingSectionController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDListBindingSectionController.m; sourceTree = "<group>"; };
+		8778BECE94D7C5D22372A22EE2499146 /* PDListSectionController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDListSectionController.m; sourceTree = "<group>"; };
+		8AECF53AC769225B9D7BB70FA0A13E5C /* PDListKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PDListKit-Info.plist"; sourceTree = "<group>"; };
+		8E04D5EC58327A2C07CAF970DC611211 /* PDListScrollDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListScrollDelegate.h; sourceTree = "<group>"; };
+		9412D490DD3C4535525D1AE9A5B77A64 /* PDListSectionMap.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDListSectionMap.m; sourceTree = "<group>"; };
+		997A5CB367DB66E6391367F53063C467 /* PDListKitUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDListKitUtil.m; sourceTree = "<group>"; };
+		9AA1A51F08AFC6C31A9EA2027C79B614 /* PDListSectionController+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PDListSectionController+Internal.h"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A11E72F8258C6AE108B4C48FD92D304D /* PDListGenericSectionController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDListGenericSectionController.m; sourceTree = "<group>"; };
-		A330C156793C0B78407C4C30380E3C8E /* PDListKitUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListKitUtil.h; sourceTree = "<group>"; };
+		A776E6522D3997D221E81EC13911A0A7 /* PDListAdapter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDListAdapter.m; sourceTree = "<group>"; };
 		AB776BF9810451C51785595D7D9872FD /* Pods-PDListKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PDListKit_Example.modulemap"; sourceTree = "<group>"; };
-		B063DD27AF5874098086A8E782569757 /* PDListKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = PDListKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B49AF13A1489F83AA041D0F98E2ECE7B /* PDListKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PDListKit.debug.xcconfig; sourceTree = "<group>"; };
-		B85A126E18D43C721D77193018632C83 /* PDListIndexSetResult+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PDListIndexSetResult+Internal.h"; sourceTree = "<group>"; };
-		B9CA7D7662BB1EB93E92448FC0FF76EA /* PDListBindingSectionController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListBindingSectionController.h; sourceTree = "<group>"; };
-		BC355E9CC5F217F0A73148E76861693B /* PDListAdapter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDListAdapter.m; sourceTree = "<group>"; };
+		B3A9E461E6C53F0E7A9BF16D7A34E76B /* PDListTableContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListTableContext.h; sourceTree = "<group>"; };
+		BD19B7CB91C1BDC6443639D3973AE529 /* PDListBindingSectionController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListBindingSectionController.h; sourceTree = "<group>"; };
 		BE8DB94CE1EACC2A65E2E4B9D12CCD73 /* Pods-PDListKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PDListKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		BF2BDE638E4B7205A23AFECC1A33C630 /* PDListDisplayDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListDisplayDelegate.h; sourceTree = "<group>"; };
-		C16F12B15257E8EB0DA6D763719EC687 /* PDListDiff.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = PDListDiff.mm; sourceTree = "<group>"; };
-		C2CAB4EE9B51523B41E1E142F4A5027C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		C47275ED778020E29CFB139ABBD78BF1 /* PDListDiffable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListDiffable.h; sourceTree = "<group>"; };
+		C0532AA0F27C4325D0DB4DD45B4A36AD /* PDListGenericSectionController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListGenericSectionController.h; sourceTree = "<group>"; };
 		C63B6DF67B74F805EC8BB98C3C08D255 /* Pods-PDListKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PDListKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		C68C556F2041E314384404F1CB08E40E /* PDListKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PDListKit-prefix.pch"; sourceTree = "<group>"; };
-		C7B10997DC5BB8BD3B5D8BB1B5743C94 /* PDListKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PDListKit.modulemap; sourceTree = "<group>"; };
-		C84003D2BB4218A8C173941C5C0602BA /* PDListKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PDListKit-dummy.m"; sourceTree = "<group>"; };
-		D3A59D3AF28BF565F74E8152284D1DF9 /* PDListKitUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDListKitUtil.m; sourceTree = "<group>"; };
+		D1B24BF20176B324399057B8D006686B /* PDListIndexSetResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDListIndexSetResult.m; sourceTree = "<group>"; };
 		D41EA8C50127E5CAE5A9BD7256FCB593 /* Pods-PDListKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PDListKit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		D492591E8C1A43AA8F02234F40F2BC71 /* Pods_PDListKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PDListKit_Tests.framework; path = "Pods-PDListKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D68E129C64F2DEE3180291F0F6DC507A /* PDListAdapter+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PDListAdapter+Internal.h"; sourceTree = "<group>"; };
-		D865F898FA416CAB2E7E50FA8E48C1CD /* PDListGenericSectionController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListGenericSectionController.h; sourceTree = "<group>"; };
-		DCA51E39F6A1C48AF0D0EA43971DA9E6 /* PDListBindingSectionController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDListBindingSectionController.m; sourceTree = "<group>"; };
-		DF77AB94494935B61B8EA6A45ABEC27A /* PDListSingleSectionController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDListSingleSectionController.m; sourceTree = "<group>"; };
-		E76FB4AE9F106C1114EFF9B34669047E /* PDListSectionController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDListSectionController.m; sourceTree = "<group>"; };
+		E075B1D67081840A7556E05E624ABF23 /* PDListSectionMap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListSectionMap.h; sourceTree = "<group>"; };
+		E235CE4EAF46BAB66425CE4B238178F1 /* NSArray+PDListDiff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PDListDiff.m"; sourceTree = "<group>"; };
+		E2F54C6C1D3F04A4951283287A345103 /* PDListSectionController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListSectionController.h; sourceTree = "<group>"; };
 		EA5FA64ACF1D021940527639838D2B29 /* Pods-PDListKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PDListKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		EA83910B62AE3E5A8ABEAAA7730CBA84 /* PDListSectionController+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PDListSectionController+Internal.h"; sourceTree = "<group>"; };
-		EC3EB90C212BCDDA6056C9BB4469D15E /* PDListBindable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListBindable.h; sourceTree = "<group>"; };
-		F260DEE13B3928D68744A3AA1E86F1F2 /* NSArray+PDListDiff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSArray+PDListDiff.h"; sourceTree = "<group>"; };
-		F309C5FC8FF69C1F632DDDFB90D9E866 /* PDListMoveIndex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListMoveIndex.h; sourceTree = "<group>"; };
+		EA7B7DAA66EA76F347DF8DEB9348AC5F /* PDListEditingDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListEditingDelegate.h; sourceTree = "<group>"; };
+		F11A5F55360C54048F5D00AC4849B6E0 /* PDListKitUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDListKitUtil.h; sourceTree = "<group>"; };
+		F2E6E6B56A261FC8968B489C98518B1A /* PDListKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PDListKit.debug.xcconfig; sourceTree = "<group>"; };
+		F5AE820E60BC52315A21DD8A8AADF5BD /* PDListAdapter+UITableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PDListAdapter+UITableView.h"; sourceTree = "<group>"; };
 		F7A6FC46A64C239AEBDCFDF89687801A /* Pods-PDListKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PDListKit_Example-umbrella.h"; sourceTree = "<group>"; };
 		F9E6B2A9C981CB2E9D09BF4815FA618B /* Pods-PDListKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PDListKit_Example-Info.plist"; sourceTree = "<group>"; };
+		FAA08901B0A311743D3E924777DF8226 /* PDListKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = PDListKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,14 +151,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		184D4B46D6F0C96C18D35B5BA5A3F6F2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				01CE568CAAD2257DD989B30AD042DDDA /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A6806F86AFE76F642C83B2BDD61510E9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -159,35 +159,48 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F41C7BA33785FF39D4D0D9DD28A0801F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79334093BD27D3402BABFCC85B638DF3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		08BF934F950C4FD51ED778E66DF3F31C /* PDListKit */ = {
+		2E5E4F0DC52CD23457B43A6A9A5F676A /* PDListKit */ = {
 			isa = PBXGroup;
 			children = (
-				E8299B11A1117B5C60D708AC4276F596 /* Diff */,
-				EBCE8A6DAD290FCE42AB1DE48C7DC238 /* Extension */,
-				357064BB330BC2737E962EA73B9C0E96 /* ListKit */,
-				41B4ACD0C0E282D1C9F05B04CE996A8C /* Pod */,
-				E85FC235E9AE0AC93E3E9EC70BC2AAA6 /* Support Files */,
-				390B0981200D7946FE7DE2CE1B3ACD1D /* Util */,
+				34BA9CDE75461736C81051FC3EDF88F5 /* Diff */,
+				EEB4B1A3786D451019A6A196FD2E866C /* Extension */,
+				3716D8755DACE31E5C61675ED7678C95 /* Internal */,
+				5A07A4C5CB7900CF742D647A889D8D85 /* ListKit */,
+				8F8782D9F39D30441B83D9489DA161E6 /* Pod */,
+				C340A2B8B19B3CB9C5D62EEB5C4C5542 /* Support Files */,
 			);
 			name = PDListKit;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		11179A289BA53AE2CA14F9C626543C8E /* SectionController */ = {
+		34BA9CDE75461736C81051FC3EDF88F5 /* Diff */ = {
 			isa = PBXGroup;
 			children = (
-				BF2BDE638E4B7205A23AFECC1A33C630 /* PDListDisplayDelegate.h */,
-				9B0D9D5711CA1A4AA0A85DA405169068 /* PDListEditingDelegate.h */,
-				4D341AC0AAFB14204BD327422D49D453 /* PDListScrollDelegate.h */,
-				41D83263FFA0DE51F4C29B9BF397DEB6 /* PDListSectionController.h */,
-				E76FB4AE9F106C1114EFF9B34669047E /* PDListSectionController.m */,
-				EA83910B62AE3E5A8ABEAAA7730CBA84 /* PDListSectionController+Internal.h */,
+				48B066704FC206EAC468F35CC17A742E /* NSArray+PDListDiff.h */,
+				E235CE4EAF46BAB66425CE4B238178F1 /* NSArray+PDListDiff.m */,
+				2A89338264F2C66D261F44139D100BC1 /* PDListBindable.h */,
+				4B42F11E5A217D5722B32ADCCE398055 /* PDListDiff.h */,
+				43AF27B1F6925034DB9C652ABDC75A97 /* PDListDiff.mm */,
+				61B3D75AE8A0A68194EDD758AFA31278 /* PDListDiffable.h */,
+				416CA674A3B946DB18466B38694E29C9 /* PDListIndexSetResult.h */,
+				D1B24BF20176B324399057B8D006686B /* PDListIndexSetResult.m */,
+				289BC05947B3D0D2F550D92A6709EE5F /* PDListIndexSetResult+Internal.h */,
+				18C1A555D46A8F6F83A38790525B8EF1 /* PDListMoveIndex.h */,
+				3AAA6AA81E7D70E3965953B285BF539B /* PDListMoveIndex.m */,
 			);
-			name = SectionController;
-			path = SectionController;
+			name = Diff;
+			path = PDListKit/Classes/Diff;
 			sourceTree = "<group>";
 		};
 		3531E7673EF613C1991FD919243F43E2 /* Targets Support Files */ = {
@@ -199,36 +212,16 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		357064BB330BC2737E962EA73B9C0E96 /* ListKit */ = {
+		3716D8755DACE31E5C61675ED7678C95 /* Internal */ = {
 			isa = PBXGroup;
 			children = (
-				8FD31B5F61280A9744872713F96630E5 /* PDListAssert.h */,
-				1A4D203DEF6F7E506CB00AF530A64A20 /* PDListKit.h */,
-				DCA83D5557E4F4988D35D4B1F0BFBB0C /* ListAdapter */,
-				11179A289BA53AE2CA14F9C626543C8E /* SectionController */,
+				F11A5F55360C54048F5D00AC4849B6E0 /* PDListKitUtil.h */,
+				997A5CB367DB66E6391367F53063C467 /* PDListKitUtil.m */,
+				E075B1D67081840A7556E05E624ABF23 /* PDListSectionMap.h */,
+				9412D490DD3C4535525D1AE9A5B77A64 /* PDListSectionMap.m */,
 			);
-			name = ListKit;
-			path = PDListKit/Classes/ListKit;
-			sourceTree = "<group>";
-		};
-		390B0981200D7946FE7DE2CE1B3ACD1D /* Util */ = {
-			isa = PBXGroup;
-			children = (
-				A330C156793C0B78407C4C30380E3C8E /* PDListKitUtil.h */,
-				D3A59D3AF28BF565F74E8152284D1DF9 /* PDListKitUtil.m */,
-			);
-			name = Util;
-			path = PDListKit/Classes/Util;
-			sourceTree = "<group>";
-		};
-		41B4ACD0C0E282D1C9F05B04CE996A8C /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				C2CAB4EE9B51523B41E1E142F4A5027C /* LICENSE */,
-				B063DD27AF5874098086A8E782569757 /* PDListKit.podspec */,
-				99305F38F37F465097E8ECA4D9E135A2 /* README.md */,
-			);
-			name = Pod;
+			name = Internal;
+			path = PDListKit/Classes/Internal;
 			sourceTree = "<group>";
 		};
 		4A453775BD61D77219153ADCCDC62A25 /* Pods-PDListKit_Example */ = {
@@ -256,6 +249,42 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		5A07A4C5CB7900CF742D647A889D8D85 /* ListKit */ = {
+			isa = PBXGroup;
+			children = (
+				248CF4E5524564C4AD19FB84D8E1DEC4 /* PDListAssert.h */,
+				761CD53FAB6C62FA9C77438D5EF56ECC /* PDListKit.h */,
+				F268DFCD01F62F7EDF2C4BE3CD1B1FDB /* ListAdapter */,
+				71106BC0AD9A0EEC064F9874336902D5 /* SectionController */,
+			);
+			name = ListKit;
+			path = PDListKit/Classes/ListKit;
+			sourceTree = "<group>";
+		};
+		71106BC0AD9A0EEC064F9874336902D5 /* SectionController */ = {
+			isa = PBXGroup;
+			children = (
+				0CA2F36CF4FCBE079EE3EB77D84A0AFB /* PDListDisplayDelegate.h */,
+				EA7B7DAA66EA76F347DF8DEB9348AC5F /* PDListEditingDelegate.h */,
+				8E04D5EC58327A2C07CAF970DC611211 /* PDListScrollDelegate.h */,
+				E2F54C6C1D3F04A4951283287A345103 /* PDListSectionController.h */,
+				8778BECE94D7C5D22372A22EE2499146 /* PDListSectionController.m */,
+				9AA1A51F08AFC6C31A9EA2027C79B614 /* PDListSectionController+Internal.h */,
+			);
+			name = SectionController;
+			path = SectionController;
+			sourceTree = "<group>";
+		};
+		8F8782D9F39D30441B83D9489DA161E6 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				41ABBE521DDF84ABF15384731D91726F /* LICENSE */,
+				FAA08901B0A311743D3E924777DF8226 /* PDListKit.podspec */,
+				722C961AD1E5CA9B94E36A272353E273 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		B1EFA1CED08B7A32DAA5B3D6E5CF6CAC /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -264,6 +293,21 @@
 				D492591E8C1A43AA8F02234F40F2BC71 /* Pods_PDListKit_Tests.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C340A2B8B19B3CB9C5D62EEB5C4C5542 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2CEF6DB55293B83CF2790145D011DCC7 /* PDListKit.modulemap */,
+				0FD9A743467BA6F7624B7E242AE81D5F /* PDListKit-dummy.m */,
+				8AECF53AC769225B9D7BB70FA0A13E5C /* PDListKit-Info.plist */,
+				67FA125CEFF8D25137629807C3B32D41 /* PDListKit-prefix.pch */,
+				211EEEA80EB13ABEE3074C1F10E80642 /* PDListKit-umbrella.h */,
+				F2E6E6B56A261FC8968B489C98518B1A /* PDListKit.debug.xcconfig */,
+				5B03482015C62B8EA849EBC23A380960 /* PDListKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/PDListKit";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -288,70 +332,38 @@
 		DB1EAD09346DD578CDD5E1BD350486F0 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				08BF934F950C4FD51ED778E66DF3F31C /* PDListKit */,
+				2E5E4F0DC52CD23457B43A6A9A5F676A /* PDListKit */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		DCA83D5557E4F4988D35D4B1F0BFBB0C /* ListAdapter */ = {
+		EEB4B1A3786D451019A6A196FD2E866C /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				90BA407F7608087A626F120A8483FA6C /* PDListAdapter.h */,
-				BC355E9CC5F217F0A73148E76861693B /* PDListAdapter.m */,
-				D68E129C64F2DEE3180291F0F6DC507A /* PDListAdapter+Internal.h */,
-				5FFAB7B8174CEBC505CA6B6F8DAA762B /* PDListAdapter+UITableView.h */,
-				721877B09B356F25C207FB184AD10155 /* PDListAdapter+UITableView.m */,
-			);
-			name = ListAdapter;
-			path = ListAdapter;
-			sourceTree = "<group>";
-		};
-		E8299B11A1117B5C60D708AC4276F596 /* Diff */ = {
-			isa = PBXGroup;
-			children = (
-				F260DEE13B3928D68744A3AA1E86F1F2 /* NSArray+PDListDiff.h */,
-				6DA26FB5C71C5A9CC1EF5028F7904EED /* NSArray+PDListDiff.m */,
-				EC3EB90C212BCDDA6056C9BB4469D15E /* PDListBindable.h */,
-				16D918466547412F0E561D45D026730E /* PDListDiff.h */,
-				C16F12B15257E8EB0DA6D763719EC687 /* PDListDiff.mm */,
-				C47275ED778020E29CFB139ABBD78BF1 /* PDListDiffable.h */,
-				71E70FB89F064758A8B632DF22EE1D41 /* PDListIndexSetResult.h */,
-				6630800790F5A7CED88187B6759E219C /* PDListIndexSetResult.m */,
-				B85A126E18D43C721D77193018632C83 /* PDListIndexSetResult+Internal.h */,
-				F309C5FC8FF69C1F632DDDFB90D9E866 /* PDListMoveIndex.h */,
-				1E6F614B4C9FCC9C79E4C496E60DA159 /* PDListMoveIndex.m */,
-			);
-			name = Diff;
-			path = PDListKit/Classes/Diff;
-			sourceTree = "<group>";
-		};
-		E85FC235E9AE0AC93E3E9EC70BC2AAA6 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				C7B10997DC5BB8BD3B5D8BB1B5743C94 /* PDListKit.modulemap */,
-				C84003D2BB4218A8C173941C5C0602BA /* PDListKit-dummy.m */,
-				6E81C65E21554F3DCDADC756BDE5C95B /* PDListKit-Info.plist */,
-				C68C556F2041E314384404F1CB08E40E /* PDListKit-prefix.pch */,
-				6DAFBE252CC79BDA915801C3D2A45F22 /* PDListKit-umbrella.h */,
-				B49AF13A1489F83AA041D0F98E2ECE7B /* PDListKit.debug.xcconfig */,
-				263D53140FC5B6A50A1196A99B0E4377 /* PDListKit.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/PDListKit";
-			sourceTree = "<group>";
-		};
-		EBCE8A6DAD290FCE42AB1DE48C7DC238 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				B9CA7D7662BB1EB93E92448FC0FF76EA /* PDListBindingSectionController.h */,
-				DCA51E39F6A1C48AF0D0EA43971DA9E6 /* PDListBindingSectionController.m */,
-				D865F898FA416CAB2E7E50FA8E48C1CD /* PDListGenericSectionController.h */,
-				A11E72F8258C6AE108B4C48FD92D304D /* PDListGenericSectionController.m */,
-				936369D670DE9D4E3F43E0FB519C9B78 /* PDListSingleSectionController.h */,
-				DF77AB94494935B61B8EA6A45ABEC27A /* PDListSingleSectionController.m */,
+				BD19B7CB91C1BDC6443639D3973AE529 /* PDListBindingSectionController.h */,
+				7B35BDEC234ED602BA3B44F33CB4F1D4 /* PDListBindingSectionController.m */,
+				C0532AA0F27C4325D0DB4DD45B4A36AD /* PDListGenericSectionController.h */,
+				3696B3EF57A0508C784CB9B77B635AAA /* PDListGenericSectionController.m */,
+				16619B5FAE16B61EE574222543CFA8BB /* PDListSingleSectionController.h */,
+				105AD651AE4565CEF82F1733EEB0C5D9 /* PDListSingleSectionController.m */,
 			);
 			name = Extension;
 			path = PDListKit/Classes/Extension;
+			sourceTree = "<group>";
+		};
+		F268DFCD01F62F7EDF2C4BE3CD1B1FDB /* ListAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				23EC2D2F1FF2DD1184894648E57F2F14 /* PDListAdapter.h */,
+				A776E6522D3997D221E81EC13911A0A7 /* PDListAdapter.m */,
+				35338C639AD4CE114B65CCBABB3909BC /* PDListAdapter+Internal.h */,
+				F5AE820E60BC52315A21DD8A8AADF5BD /* PDListAdapter+UITableView.h */,
+				489389B8152E1C42236E4A7010314A1E /* PDListAdapter+UITableView.m */,
+				B3A9E461E6C53F0E7A9BF16D7A34E76B /* PDListTableContext.h */,
+				26779F990485F745D22C80AD9B923C71 /* PDListUpdater.h */,
+			);
+			name = ListAdapter;
+			path = ListAdapter;
 			sourceTree = "<group>";
 		};
 		F5A11AF1CC26C1455E5EF9B9FAB02D65 /* Pods-PDListKit_Tests */ = {
@@ -381,40 +393,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B77754D00C110FD1163CA08E1CDC849C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F82DD9FBCFA6976A529A53AE99F6480 /* NSArray+PDListDiff.h in Headers */,
+				4F8F3730F0BDE3AF92280BF48B1AA9AB /* PDListAdapter+Internal.h in Headers */,
+				D4582D3CF1B407F285DB94018D30FC3B /* PDListAdapter+UITableView.h in Headers */,
+				CABAA976249A4BE01D642EF843CD0332 /* PDListAdapter.h in Headers */,
+				83BA627972622F7B8EF223AB13EDED6F /* PDListAssert.h in Headers */,
+				9255D70D82DA4EB5553C375BD8672B9F /* PDListBindable.h in Headers */,
+				AF7F1D0FE4FF8991FE18A227DA91A3C5 /* PDListBindingSectionController.h in Headers */,
+				FEA9AA57BE94CFF77E0BA7E5C2422C8D /* PDListDiff.h in Headers */,
+				5E860A2D873E089C0B19D7FF71734E10 /* PDListDiffable.h in Headers */,
+				6A15BEFB2D5E527A7FD4EE7FF9D3998E /* PDListDisplayDelegate.h in Headers */,
+				E71B2B8E9F1F006045DDE0DE30CB5A26 /* PDListEditingDelegate.h in Headers */,
+				5F46BBB5090CD2761BC254875D26BFD1 /* PDListGenericSectionController.h in Headers */,
+				D80A4C86DE1AB0A1FE15CE27F9FC0B1E /* PDListIndexSetResult+Internal.h in Headers */,
+				674F22AC3B6AE0243D02BFEB28C44677 /* PDListIndexSetResult.h in Headers */,
+				310D5130B386129D75699560CC634DCC /* PDListKit-umbrella.h in Headers */,
+				0941D86F44462C61BD6BD32880FE8904 /* PDListKit.h in Headers */,
+				45A51DD97C4D5B5B259D82FD259BB13E /* PDListKitUtil.h in Headers */,
+				09B5EF9A70D57E098F585258C67E3711 /* PDListMoveIndex.h in Headers */,
+				A393DC2B74B8977C06B0BED465D5AC31 /* PDListScrollDelegate.h in Headers */,
+				C3FAD4554E3DE865ADAD07A17435C88E /* PDListSectionController+Internal.h in Headers */,
+				37B78E2CC7B5255096203C10919ED165 /* PDListSectionController.h in Headers */,
+				457DDB56068E3C589F184F0626B3193B /* PDListSectionMap.h in Headers */,
+				F1296C4E2E161E27EB35085A7188CD34 /* PDListSingleSectionController.h in Headers */,
+				6308F4A9FEA18D48C1B1484024E30AF2 /* PDListTableContext.h in Headers */,
+				C826B57ABD46A60FE62603AABEE17D11 /* PDListUpdater.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C34CBAAEFFC16A2123134A87C1F67B56 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				32FC9ECE40ABAF543810167FF5BC9030 /* Pods-PDListKit_Tests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F8117F8F716E25DB0E447627672F189D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				19A992882D11B045AB739964FAFBC5BA /* NSArray+PDListDiff.h in Headers */,
-				F54AD4E45E2EF688DCD51CC0F4C20F3A /* PDListAdapter+Internal.h in Headers */,
-				F68B3FB5994AF04D7253BD1FC2BEDD46 /* PDListAdapter+UITableView.h in Headers */,
-				38DB4751AB974D78D8294D5507BF0BAF /* PDListAdapter.h in Headers */,
-				613A67E007C80E1467DEBCC1EF131E61 /* PDListAssert.h in Headers */,
-				EDF16BD5047C22352E90867B8E55ABE1 /* PDListBindable.h in Headers */,
-				14DF61ECA80A1EDDE7F1369821735358 /* PDListBindingSectionController.h in Headers */,
-				77CBEE68A4E164E52CD35ECB48A62D2A /* PDListDiff.h in Headers */,
-				11AA3F7CA2C92E5620F0DDAE0964638F /* PDListDiffable.h in Headers */,
-				48E8FABBFEE17ED5C26F7F80A249022B /* PDListDisplayDelegate.h in Headers */,
-				66ECF741B81895A068765A6BA6BC2486 /* PDListEditingDelegate.h in Headers */,
-				B1C75D4718AE8C5924D36A76E0BC9EF4 /* PDListGenericSectionController.h in Headers */,
-				6C220B6689CB6997B928F1A210A5B337 /* PDListIndexSetResult+Internal.h in Headers */,
-				8475DD763B06D8CC12DCE1638D02FD84 /* PDListIndexSetResult.h in Headers */,
-				085DFFFD7A28E2147019ED9E61526918 /* PDListKit-umbrella.h in Headers */,
-				7111ECD8BB406B5E8878CEACC434EC6A /* PDListKit.h in Headers */,
-				DA2B003F0504BFDCF0A5F50ED54E289C /* PDListKitUtil.h in Headers */,
-				6A57807B06D6007A6D08D209229672FC /* PDListMoveIndex.h in Headers */,
-				F59E915D266092D945F821C8A34D779F /* PDListScrollDelegate.h in Headers */,
-				FCF1AFA4B1B64FB09FA847E937E4010D /* PDListSectionController+Internal.h in Headers */,
-				969F05057CC2F344B8904FE38808F4D3 /* PDListSectionController.h in Headers */,
-				C95A816391400F099C99D33BACFD136D /* PDListSingleSectionController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,7 +448,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				DE8AC94BC18D629F596BB48CB6B7A7F5 /* PBXTargetDependency */,
+				B60C39CB44476A4E2BB6B378EA3D2C75 /* PBXTargetDependency */,
 			);
 			name = "Pods-PDListKit_Tests";
 			productName = "Pods-PDListKit_Tests";
@@ -452,7 +467,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				523B2F524E76A5F494C66D79A08EC6BC /* PBXTargetDependency */,
+				DC7EB4B72B447820262A622CE8CC85F3 /* PBXTargetDependency */,
 			);
 			name = "Pods-PDListKit_Example";
 			productName = "Pods-PDListKit_Example";
@@ -461,12 +476,12 @@
 		};
 		F8A279239E2C74D8F42E45B5F220ACCB /* PDListKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3F21FE40170DA5F036514BE3248423DD /* Build configuration list for PBXNativeTarget "PDListKit" */;
+			buildConfigurationList = 85DE5AD4DB13F5AAA283DD2C50B7318D /* Build configuration list for PBXNativeTarget "PDListKit" */;
 			buildPhases = (
-				F8117F8F716E25DB0E447627672F189D /* Headers */,
-				BF1E45BF61381A6475876BA6CA0A033B /* Sources */,
-				184D4B46D6F0C96C18D35B5BA5A3F6F2 /* Frameworks */,
-				147ED7ECC9134CC900D3B2A8A640B18B /* Resources */,
+				B77754D00C110FD1163CA08E1CDC849C /* Headers */,
+				854917341F05940B105BA20E9A73B131 /* Sources */,
+				F41C7BA33785FF39D4D0D9DD28A0801F /* Frameworks */,
+				B2CBA86FD373E6329B961647B0C863B1 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -507,13 +522,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		147ED7ECC9134CC900D3B2A8A640B18B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		88C72E4B64BE77B014C55296AEF0B547 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -522,6 +530,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		AFC13FF6AFCAE77AD3250AC94E3F5DE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2CBA86FD373E6329B961647B0C863B1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -547,39 +562,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BF1E45BF61381A6475876BA6CA0A033B /* Sources */ = {
+		854917341F05940B105BA20E9A73B131 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9AF345C441CDD039275584EA863F07C /* NSArray+PDListDiff.m in Sources */,
-				CCEA24714FE351358FBD580F585BD1E3 /* PDListAdapter+UITableView.m in Sources */,
-				29FDCD91F8896BCF2550C46FC280425B /* PDListAdapter.m in Sources */,
-				2922D8653D04BFB9CF2446F594615B35 /* PDListBindingSectionController.m in Sources */,
-				E51F3EFF22E089630A0B5F778367783E /* PDListDiff.mm in Sources */,
-				4F552DE576D042BB17D7AF4539788E62 /* PDListGenericSectionController.m in Sources */,
-				14404DF8BC6E63D4CAC1F1F967D6A35B /* PDListIndexSetResult.m in Sources */,
-				84F4A68994EB537ED41B2E175D676FC6 /* PDListKit-dummy.m in Sources */,
-				AD4670DAA4EDBF7C717A19F1D975389B /* PDListKitUtil.m in Sources */,
-				49926470029D9E3A55B62AAFAA26AC75 /* PDListMoveIndex.m in Sources */,
-				386FEEB153410839A4F69CFBBCA8C2F8 /* PDListSectionController.m in Sources */,
-				DA66D26B476EFE049B5698C97B05A516 /* PDListSingleSectionController.m in Sources */,
+				DBDD2EE2AC4574A44AEF3F813077EC42 /* NSArray+PDListDiff.m in Sources */,
+				3622C71A1A8EAAC6FE49E774DA46B081 /* PDListAdapter+UITableView.m in Sources */,
+				E1ADA55240B58D8DD60B843424DAB0B4 /* PDListAdapter.m in Sources */,
+				8A56A303CC124389CAD955A6A21EE966 /* PDListBindingSectionController.m in Sources */,
+				3BBFA1542E9B1A1826EAAE6543260908 /* PDListDiff.mm in Sources */,
+				F14D1CA723A733A04CB700DE98E834FC /* PDListGenericSectionController.m in Sources */,
+				BDE2CD79C4AF5D2C8BD55F8B3F7BE0AE /* PDListIndexSetResult.m in Sources */,
+				FA480DCD1ABC3A112B0B8C764E101EAC /* PDListKit-dummy.m in Sources */,
+				FC64174EB3863ECE8B3BE1F053A8C6E0 /* PDListKitUtil.m in Sources */,
+				A8CE4DB3CE27419FC7F0B25516F4B9D2 /* PDListMoveIndex.m in Sources */,
+				C0D07CFA5576238E636EF425C3AD33B8 /* PDListSectionController.m in Sources */,
+				3FE7F2BBEB97A3069497EE479371B87C /* PDListSectionMap.m in Sources */,
+				DA52D632403FF64921BBCFAC17835C18 /* PDListSingleSectionController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		523B2F524E76A5F494C66D79A08EC6BC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = PDListKit;
-			target = F8A279239E2C74D8F42E45B5F220ACCB /* PDListKit */;
-			targetProxy = 5173609468EED47F44362A465F68E8F0 /* PBXContainerItemProxy */;
-		};
-		DE8AC94BC18D629F596BB48CB6B7A7F5 /* PBXTargetDependency */ = {
+		B60C39CB44476A4E2BB6B378EA3D2C75 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-PDListKit_Example";
 			target = EC87314B881406EAACB74118B379A4B3 /* Pods-PDListKit_Example */;
-			targetProxy = 4497F81643A83FC36092C83BE3592B10 /* PBXContainerItemProxy */;
+			targetProxy = 729DC9CFD7EE8C0115F6EBF1EA95A1F4 /* PBXContainerItemProxy */;
+		};
+		DC7EB4B72B447820262A622CE8CC85F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PDListKit;
+			target = F8A279239E2C74D8F42E45B5F220ACCB /* PDListKit */;
+			targetProxy = 78AB6C1841285379914BD39ACC738914 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -610,6 +626,37 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1A7B067E387C1D7496B30C2FF93B1543 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B03482015C62B8EA849EBC23A380960 /* PDListKit.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PDListKit/PDListKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PDListKit/PDListKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PDListKit/PDListKit.modulemap";
+				PRODUCT_MODULE_NAME = PDListKit;
+				PRODUCT_NAME = PDListKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -715,36 +762,6 @@
 			};
 			name = Debug;
 		};
-		6ED95C195676207CDCA42D283374EA2F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B49AF13A1489F83AA041D0F98E2ECE7B /* PDListKit.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PDListKit/PDListKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PDListKit/PDListKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PDListKit/PDListKit.modulemap";
-				PRODUCT_MODULE_NAME = PDListKit;
-				PRODUCT_NAME = PDListKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		9B058D245ADA2A7699D98C5B831A1664 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C63B6DF67B74F805EC8BB98C3C08D255 /* Pods-PDListKit_Tests.debug.xcconfig */;
@@ -777,9 +794,9 @@
 			};
 			name = Debug;
 		};
-		B4CD49297013710B4B4A42C02368C35A /* Release */ = {
+		B1F740F25241A637182D779F3EDB1C89 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 263D53140FC5B6A50A1196A99B0E4377 /* PDListKit.release.xcconfig */;
+			baseConfigurationReference = F2E6E6B56A261FC8968B489C98518B1A /* PDListKit.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -802,11 +819,10 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -915,20 +931,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3F21FE40170DA5F036514BE3248423DD /* Build configuration list for PBXNativeTarget "PDListKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6ED95C195676207CDCA42D283374EA2F /* Debug */,
-				B4CD49297013710B4B4A42C02368C35A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
 				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85DE5AD4DB13F5AAA283DD2C50B7318D /* Build configuration list for PBXNativeTarget "PDListKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1F740F25241A637182D779F3EDB1C89 /* Debug */,
+				1A7B067E387C1D7496B30C2FF93B1543 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

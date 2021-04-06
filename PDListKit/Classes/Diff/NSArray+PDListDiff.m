@@ -17,7 +17,8 @@ NSArray *PDListObjectsWithDuplicateIdentifiersRemoved(NSArray<id<PDListDiffable>
     NSMutableArray *uniqueObjects = [NSMutableArray array];
     
     for (id<PDListDiffable> object in objects) {
-        id diffIdentifier = [object diffIdentifier];
+        id diffIdentifier = ([object respondsToSelector:@selector(diffIdentifier)] ?
+                             [object diffIdentifier] : @(object.hash));
         id previousObject = [identifierMap objectForKey:diffIdentifier];
         if (diffIdentifier != nil
             && previousObject == nil) {

@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface PDListSectionController ()
 
 @property (nonatomic, assign) NSInteger section;
+@property (nonatomic, assign) BOOL isFirstSection;
+@property (nonatomic, assign) BOOL isLastSection;
 @property (nonatomic, weak) id<PDListUpdater> updater;
 @property (nonatomic, weak) id<PDListTableContext> tableContext;
 
