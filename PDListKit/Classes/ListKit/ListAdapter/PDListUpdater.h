@@ -9,9 +9,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol PDListDiffable;
-@class PDListSectionController;
-
 @protocol PDListUpdater <NSObject>
 
 - (void)reloadData;
