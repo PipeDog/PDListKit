@@ -34,13 +34,11 @@
 }
 
 - (IBAction)didClickLeftItem:(id)sender {
-//    [self.listAdapter reloadSections:[NSIndexSet indexSetWithIndex:1] withRowAnimation:UITableViewRowAnimationLeft];
-    [self.listAdapter reloadData:PDListUpdaterebindObject];
+    [self.listAdapter reloadData];
 }
 
 - (IBAction)didClickRightItem:(id)sender {
-//    [self.listAdapter reloadData];
-    [self.listAdapter reloadData:PDListUpdaterebindObject];
+    [self.listAdapter reloadData];
 }
 
 #pragma mark - PDListAdapterDataSource Methods

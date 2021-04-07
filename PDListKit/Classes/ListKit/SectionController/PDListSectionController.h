@@ -26,9 +26,8 @@ UIKIT_EXTERN CGFloat const PDListSectionControllerDefaultCellHeight;
 @property (nonatomic, weak, nullable) id<PDListDisplayDelegate> displayDelegate;
 @property (nonatomic, weak, nullable) id<PDListEditingDelegate> editingDelegate;
 
-- (void)didUpdateToObject:(id)object;
-
 - (void)reloadData;
+- (void)didUpdateToObject:(id)object;
 
 - (NSInteger)numberOfRows;
 - (__kindof UITableViewCell *)cellForRowAtIndex:(NSInteger)index;

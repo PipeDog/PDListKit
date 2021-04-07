@@ -20,13 +20,13 @@ CGFloat const PDListSectionControllerDefaultCellHeight = 44.f;
 #endif
 }
 
-- (void)didUpdateToObject:(id)object {
-    PDAssert(NO, @"This method must be override, (%s).", __FUNCTION__);
-}
-
 - (void)reloadData {
     NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:self.section];
     [self.updater reloadSections:indexSet];
+}
+
+- (void)didUpdateToObject:(id)object {
+    PDAssert(NO, @"This method must be override, (%s).", __FUNCTION__);
 }
 
 - (NSInteger)numberOfRows {

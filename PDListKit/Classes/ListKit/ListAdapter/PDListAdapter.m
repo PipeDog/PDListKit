@@ -42,19 +42,18 @@
 
 #pragma mark - PDListUpdater Methods
 - (void)reloadData {
-    [self reloadData:PDListUpdaterebindObject];
-}
-
-- (void)reloadData:(PDListReloadType)reloadType {
     PDAssertMainThread();
 
-    BOOL useCachedSectionController = reloadType == PDListUpdaterebindObject;
     NSArray<id<PDListDiffable>> *newObjects = [self.dataSource objectsForListAdapter:self];
     newObjects = PDListObjectsWithDuplicateIdentifiersRemoved(newObjects);
-    [self _updateWithObjects:newObjects useCachedSectionController:useCachedSectionController];
+    [self _updateWithObjects:newObjects];
 
     [self.tableView reloadData];
     [self _addEmptyViewIfNecessary];
+}
+
+- (void)reloadSections:(NSIndexSet *)sections {
+    [self.tableView reloadSections:sections withRowAnimation:UITableViewRowAnimationNone];
 }
 
 - (void)reloadObjects:(NSArray<id<PDListDiffable>> *)objects {
@@ -75,13 +74,9 @@
         }
     }
 
-    UICollectionView *collectionView = self.collectionView;
-    PDAssert(collectionView != nil, @"Tried to reload the adapter without a collection view");
+    UITableView *tableView = self.tableView;
+    PDAssert(tableView != nil, @"Tried to reload the adapter without a table view");
     [self reloadSections:sections];
-}
-
-- (void)reloadSections:(NSIndexSet *)sections {
-    [self.tableView reloadSections:sections withRowAnimation:UITableViewRowAnimationNone];
 }
 
 #pragma mark - PDListTableContext Methods
@@ -156,16 +151,13 @@
     }
 }
 
-- (void)_updateWithObjects:(NSArray<id<PDListDiffable>> *)newObjects useCachedSectionController:(BOOL)useCachedSectionController {
+- (void)_updateWithObjects:(NSArray<id<PDListDiffable>> *)newObjects {
     NSMutableArray<PDListSectionController *> *sectionControllers = [NSMutableArray array];
     NSInteger sectionCount = newObjects.count;
         
     for (NSInteger section = 0; section < sectionCount; section++) {
         id<PDListDiffable> object = newObjects[section];
-        PDListSectionController *sectionController = nil;
-        if (useCachedSectionController) {
-            sectionController = [self.sectionMap sectionControllerForObject:object];
-        }
+        PDListSectionController *sectionController = [self.sectionMap sectionControllerForObject:object];
         if (!sectionController) {
             sectionController = [self.dataSource listAdapter:self sectionControllerForObject:object];
         }

@@ -27,11 +27,11 @@
 }
 
 #pragma mark - PDListAdapterDataSource Methods
-- (NSInteger)numberOfSectionControllersForListAdapter:(PDListAdapter *)listAdapter {
-    return 1;
+- (NSArray<id<PDListDiffable>> *)objectsForListAdapter:(PDListAdapter *)listAdapter {
+    return @[self.items];
 }
 
-- (PDListSectionController *)listAdapter:(PDListAdapter *)listAdapter sectionControllerForSection:(NSInteger)section {
+- (PDListSectionController *)listAdapter:(PDListAdapter *)listAdapter sectionControllerForObject:(id<PDListDiffable>)object {
     PDListSingleSectionController *sectionController = [[PDListSingleSectionController alloc] initWithClass:[UITableViewCell class] configBlock:^(NSInteger index, __kindof UITableViewCell * _Nonnull cell) {
         // Config cell data here.
         cell.textLabel.text = self.items[index];
