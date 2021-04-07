@@ -28,6 +28,8 @@ UIKIT_EXTERN CGFloat const PDListSectionControllerDefaultCellHeight;
 
 - (void)didUpdateToObject:(id)object;
 
+- (void)reloadData;
+
 - (NSInteger)numberOfRows;
 - (__kindof UITableViewCell *)cellForRowAtIndex:(NSInteger)index;
 

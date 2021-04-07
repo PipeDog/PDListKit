@@ -40,7 +40,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithTableView:(UITableView *)tableView NS_DESIGNATED_INITIALIZER;
 
 - (void)reloadData;
-- (void)reloadData:(PDListUpdateType)reloadType;
+- (void)reloadData:(PDListReloadType)reloadType;
+- (void)reloadObjects:(NSArray<id<PDListDiffable>> *)objects;
+- (void)reloadSections:(NSIndexSet *)sections;
 
 @end
 

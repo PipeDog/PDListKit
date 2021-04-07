@@ -42,13 +42,13 @@
 
 #pragma mark - PDListUpdater Methods
 - (void)reloadData {
-    [self reloadData:PDListUpdateRebindObject];
+    [self reloadData:PDListUpdaterebindObject];
 }
 
-- (void)reloadData:(PDListUpdateType)reloadType {
+- (void)reloadData:(PDListReloadType)reloadType {
     PDAssertMainThread();
 
-    BOOL useCachedSectionController = reloadType == PDListUpdateRebindObject;
+    BOOL useCachedSectionController = reloadType == PDListUpdaterebindObject;
     NSArray<id<PDListDiffable>> *newObjects = [self.dataSource objectsForListAdapter:self];
     newObjects = PDListObjectsWithDuplicateIdentifiersRemoved(newObjects);
     [self _updateWithObjects:newObjects useCachedSectionController:useCachedSectionController];
@@ -57,29 +57,31 @@
     [self _addEmptyViewIfNecessary];
 }
 
-- (void)performUpdateSectionControllers:(NSArray<PDListSectionController *> *)sectionControllers withRowAnimation:(UITableViewRowAnimation)animation {
-    PDAssertMainThread();
-    if (!sectionControllers.count) { return; }
+- (void)reloadObjects:(NSArray<id<PDListDiffable>> *)objects {
+    PDListSectionMap *map = self.sectionMap;
+    NSMutableIndexSet *sections = [NSMutableIndexSet new];
 
-    // Reload objects
-    BOOL useCachedSectionController = YES;
-    NSArray<id<PDListDiffable>> *newObjects = [self.dataSource objectsForListAdapter:self];
-    newObjects = PDListObjectsWithDuplicateIdentifiersRemoved(newObjects);
-    [self _updateWithObjects:newObjects useCachedSectionController:useCachedSectionController];
-
-    // Reload tableView
-    NSMutableIndexSet *indexSet = [NSMutableIndexSet indexSet];
-    for (PDListSectionController *sectionController in sectionControllers) {
-        if ([self.sectionMap sectionForSectionController:sectionController] == NSNotFound) {
-            NSAssert(NO, @"Can not found sectionController in current tableView!");
+    for (id object in objects) {
+        const NSInteger section = [map sectionForObject:object];
+        const BOOL notFound = section == NSNotFound;
+        if (notFound) {
             continue;
         }
-        if ([indexSet containsIndex:sectionController.section]) {
-            continue;
+        [sections addIndex:section];
+
+        if (object != [map objectForSection:section]) {
+            [map updateObject:object];
+            [[map sectionControllerForSection:section] didUpdateToObject:object];
         }
-        [indexSet addIndex:sectionController.section];
     }
-    [self.tableView reloadSections:indexSet withRowAnimation:animation];
+
+    UICollectionView *collectionView = self.collectionView;
+    PDAssert(collectionView != nil, @"Tried to reload the adapter without a collection view");
+    [self reloadSections:sections];
+}
+
+- (void)reloadSections:(NSIndexSet *)sections {
+    [self.tableView reloadSections:sections withRowAnimation:UITableViewRowAnimationNone];
 }
 
 #pragma mark - PDListTableContext Methods
@@ -156,9 +158,9 @@
 
 - (void)_updateWithObjects:(NSArray<id<PDListDiffable>> *)newObjects useCachedSectionController:(BOOL)useCachedSectionController {
     NSMutableArray<PDListSectionController *> *sectionControllers = [NSMutableArray array];
-    NSInteger count = newObjects.count;
+    NSInteger sectionCount = newObjects.count;
         
-    for (NSInteger section = 0; section < count; section++) {
+    for (NSInteger section = 0; section < sectionCount; section++) {
         id<PDListDiffable> object = newObjects[section];
         PDListSectionController *sectionController = nil;
         if (useCachedSectionController) {
@@ -171,7 +173,7 @@
         sectionController.updater = self;
         sectionController.tableContext = self;
         sectionController.isFirstSection = (section == 0);
-        sectionController.isLastSection = (section == count - 1);
+        sectionController.isLastSection = (section == sectionCount - 1);
         sectionController.section = section;
         
         [sectionController didUpdateToObject:object];
